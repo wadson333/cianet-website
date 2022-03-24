@@ -17,6 +17,7 @@ module.exports = {
     },
     extend: {
       colors:{
+        "usi-orange-400":"#fb923c",
         "usi-blue-900":"#030e19",
         "usi-blue-800":"#061d33",
         "usi-blue-700":"#092b4d",
