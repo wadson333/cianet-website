@@ -1,0 +1,8 @@
+.nav-link{
+    @apply text-gray-900 mx-4 font-Roboto font-semibold first-letter:capitalize text-lg text-justify
+    transition-all duration-150 hover:text-usi-blue-400;
+}
+
+.active{
+    @apply text-usi-blue-400
+}

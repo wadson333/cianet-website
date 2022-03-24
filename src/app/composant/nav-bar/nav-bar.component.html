@@ -1,1 +1,30 @@
-<p>nav-bar works!</p>
+<nav class="bg-white shadow-sm shadow-gray-200 py-6">
+    <div class="container flex mx-auto">
+        <div class="header-top-left flex mr-16">
+            <div class="bg-usi-blue-400 p-1.5 rounded-md self-center">
+                <img class="h-8 w-8 self-start" src="../../assets/usi-logo.png" alt="logo usi">
+            </div>
+            <h1 class="text-gray-700 font-bold capitalize self-start ml-2 leading-none">
+                <span class="text-usi-blue-400 text-2xl font-bold">MENFP-USI</span>
+               <br/> 
+                <span class="font-semibold text-sm">Unite de systeme d'information</span>
+                
+            </h1>
+        </div>
+        <ul class="navbar-nav flex justify-end flex-grow self-center">
+            <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
+                 [routerLinkActive]="'active'" [routerLink]="['/accueil/']" >Accueil</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}" 
+                [routerLinkActive]="'active'" [routerLink]="['/equipe/']" >Equipes</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
+                 [routerLinkActive]="'active'" [routerLink]="['/a-propos/']" >À propos</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
+                 [routerLinkActive]="'active'" [routerLink]="['/contact/']" >Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav> 
+ 
