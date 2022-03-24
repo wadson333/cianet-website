@@ -16,6 +16,7 @@ import { ContactFormComponent } from './composant/contact-form/contact-form.comp
 import { UserCardComponent } from './composant/user-card/user-card.component';
 import { MapComponent } from './composant/map/map.component';
 import { HeaderPictureComponent } from './composant/header-picture/header-picture.component';
+import { SocialMenuComponent } from './social-menu/social-menu.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeaderPictureComponent } from './composant/header-picture/header-pictur
     ContactFormComponent,
     UserCardComponent,
     MapComponent,
-    HeaderPictureComponent
+    HeaderPictureComponent,
+    SocialMenuComponent
   ],
   imports: [
     BrowserModule,
