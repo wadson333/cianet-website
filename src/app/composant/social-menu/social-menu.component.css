@@ -1,0 +1,6 @@
+.social-link{
+    @apply text-white hover:text-usi-orange-400 transition-all duration-150
+}
+.social-li{
+    @apply mx-4
+}
