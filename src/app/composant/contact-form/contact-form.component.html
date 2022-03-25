@@ -1,1 +1,29 @@
-<p>contact-form works!</p>
+<form id="contact-form" class="" action="">
+    <fieldset>
+        <div class="flex flex-col">
+            <div class="form-control">
+                <label class="label">Nom et prenom</label>
+                <input type="text" class="form-control-in" placeholder="votre nom complet" name="name" id="name">
+            </div>
+
+            <div class="form-control">
+                <label class="label">Email</label>
+                <input type="email" class="form-control-in" placeholder="votre email" name="email" id="email">
+            </div>
+
+            <div class="form-control">
+                <label class="label">Sujet</label>
+                <input type="text" class="form-control-in" placeholder="l'objet de votre message" name="subjet" id="subjet">
+            </div>
+
+            <div class="form-control  basis-full">
+                <label class="label" >Message</label>
+                <textarea name="message" id="message-contenue" placeholder="Saisissez le contenue de votre message" cols="5" rows="20"></textarea>
+            </div>
+
+            <div class="form-control basis-full btn-form-control">
+                <input type="button" class="btn usi-transition" value="Envoyer" id="send-button" >
+            </div>
+        </div> 
+    </fieldset>
+</form>
