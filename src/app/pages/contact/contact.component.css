@@ -1,5 +1,5 @@
 .title::before{
-    content: "";
+    content: ""; 
     height: 3px;
     width: 50px;
     position: absolute;
@@ -15,7 +15,7 @@
 
 
 .cd-list{
-    @apply pl-4
+    @apply pr-4 tracking-wide
 }
 
 .cd-list li{
