@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  pageLabel="À propos d'usi" 
+  backgroundImage='bg-apropos'
+  pageTitle="À propos nous" 
   constructor() { }
 
   ngOnInit(): void {

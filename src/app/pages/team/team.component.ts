@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
+  pageLabel="L'equipe d'usi"
+  backgroundImage='bg-equipe'
+  pageTitle="Notre equipe"
 
   constructor() { }
 

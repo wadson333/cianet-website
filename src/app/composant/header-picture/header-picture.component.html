@@ -1,10 +1,11 @@
-<div id="section-top" class="w-full h-96 bg-contact bg-center bg-cover bg-no-repeat">
+<div id="section-top" #sectionTop [ngClass]="backgroundImage" class="w-full h-96 bg-center bg-cover bg-no-repeat">
     <div class="container h-full">
         <div class="relative h-full" >
-            <h1 id="section-header-title" class="inline-block text-4xl py-8 text-white font-bold border-b-2x9
-              border-usi-blue-300">
-             Nous contacter
-            </h1>
+            <h1 id="section-header-title" 
+            class="inline-block text-4xl py-8 text-white font-bold 
+            border-b-2x9 border-usi-blue-100">
+                {{pageTitle}}
+            </h1> 
         </div>   
     </div>
 </div>

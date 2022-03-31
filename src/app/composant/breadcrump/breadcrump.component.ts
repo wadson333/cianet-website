@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-breadcrump',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumpComponent implements OnInit {
 
+  @Input() pageLabel=""
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
+
   }
 
 }

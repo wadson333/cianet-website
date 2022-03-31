@@ -40,11 +40,15 @@ module.exports = {
       },
 
       backgroundImage:{
-        "contact":"url('./assets/contact-back.jpg')"
+        "contact":"url('./assets/contact.jpg')",
+        "apropos":"url('./assets/apropos.jpg')",
+        "equipe":"url('./assets/equipe2.jpg')",
+        "acceuil":"url('./assets/contact-back.jpg')",
       },
 
       flexBasis:{
-        "usi-1.2/4":"32%"
+        "usi-1.2/4":"32%",
+        "usi-1/2":"49%"
       }
     },
   },
