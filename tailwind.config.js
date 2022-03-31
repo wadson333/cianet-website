@@ -29,9 +29,11 @@ module.exports = {
         "usi-blue-100":"#1b82e6",
         "usi-blue":"#1e90ff",
         "usi-light-gray":"#f7f7f7",
+        "usi-light-gray-100":"#ddd",
+        "usi-gray":"#c7c7c7",
         "usi-black":"#111",
-        "usi-black-text":"#333",
-        "usi-border-gray":"#888"
+        "usi-black-text":"#222",
+        "usi-border-gray":"#aaa"
       },
       borderWidth:{
         "2x9":"18px"
