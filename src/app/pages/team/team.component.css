@@ -1,0 +1,13 @@
+ .container .row{
+    @apply my-12
+ }
+
+
+.usi-col-13{
+    border-color: rgba(0,0,0 /25%);
+}
+
+.user-center{
+   margin-left: 2%;
+   margin-right: 2%;
+}

@@ -42,7 +42,7 @@ module.exports = {
       },
 
       flexBasis:{
-        "usi-1.2/4":"30%"
+        "usi-1.2/4":"32%"
       }
     },
   },
