@@ -1,1 +1,70 @@
-<p>about works!</p>
+<div>
+    <app-header-picture></app-header-picture>
+    <app-breadcrump></app-breadcrump>
+
+    <div class="container">
+         <div class="row my-12">
+             <p class="bref-presentation text-xl text-usi-black-text py-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eligendi obcaecati atque, asperiores tempora corrupti 
+                fugit quam ad nesciunt architecto quibusdam neque debitis!
+                Nobis necessitatibus rem modi laborum quaerat, harum culpa?
+             </p>
+         </div>
+
+         <!-- <div class="row my-8">
+             <div class="flex justify-between py-4 text-usi-black-text">
+                <div class="basis-1/3"> <h4 class="text-2xl font-bold "> Notre mission</h4></div>
+               
+                <div class="basis-2/3 ">
+                    <div class="border-b border-usi-border-gray pb-4 mb-4">
+                        <h4 class="text-xl font-bold mb-3">Vision</h4>
+                        <p class="font-lg text-usi-black">
+                            Lorem ipsum, dolor sit amet con sectetur adipisicing elit.
+                            Aliquam quisquam iste nulla delectus nisi necessitat ibus commodi animi? 
+                            A iusto suscipit distinctio tempore, excepturi magnam, atque fuga dolorum inventore aut blanditiis.
+                        </p>
+                    </div>  
+                    
+                    <div class="border-b border-usi-border-gray pb-4">
+                        <h4 class="text-xl font-bold mb-3">Vision</h4>
+                        <p class="text-usi-black">
+                            Lorem ipsum, dolor sit amet con sectetur adipisicing elit.
+                            Aliquam quisquam iste nulla delectus nisi necessitat ibus commodi animi? 
+                            A iusto suscipit distinctio tempore, excepturi magnam, atque fuga dolorum inventore aut blanditiis.
+                        </p>
+                    </div>
+                </div>  
+             </div>
+            
+         </div> -->
+
+         <div class="row my-8">
+            <div >
+                <ul>
+                    <li> 
+                        <app-accordion [altTitle]="'Notre mission'" [title]="'Notre mission'">
+                        <p class="font-lg text-usi-black">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium magni iste doloribus rerum quod hic alias sint impedit a!
+                            Rerum ipsa perspiciatis temporibus reiciendis.
+                            Quidem aliquid debitis aperiam dicta doloremque.
+                        </p>
+                        </app-accordion>
+                    </li>
+
+                    <li> 
+                        <app-accordion [altTitle]="'Notre mission'" [title]="'Notre mission'">
+                        <p class="font-lg text-usi-black">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Accusantium magni iste doloribus rerum quod hic alias sint impedit a!
+                            Rerum ipsa perspiciatis temporibus reiciendis.
+                            Quidem aliquid debitis aperiam dicta doloremque.
+                        </p>
+                        </app-accordion>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    </div>
+</div>

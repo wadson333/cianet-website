@@ -17,6 +17,7 @@ import { UserCardComponent } from './composant/user-card/user-card.component';
 import { MapComponent } from './composant/map/map.component';
 import { HeaderPictureComponent } from './composant/header-picture/header-picture.component';
 import { SocialMenuComponent } from './composant/social-menu/social-menu.component';
+import { AccordionComponent } from './composant/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { SocialMenuComponent } from './composant/social-menu/social-menu.compone
     UserCardComponent,
     MapComponent,
     HeaderPictureComponent,
-    SocialMenuComponent
+    SocialMenuComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
