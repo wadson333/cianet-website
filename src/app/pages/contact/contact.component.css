@@ -1,0 +1,26 @@
+.title::before{
+    content: ""; 
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: #fe9000;
+}
+
+.title{
+    @apply text-2xl font-semibold text-usi-black py-4 mb-4 relative;
+}
+
+
+.cd-list{
+    @apply pr-4 tracking-wide
+}
+
+.cd-list li{
+    @apply list-none my-4
+}
+.cd-icon{
+    @apply text-usi-blue-200 mr-3
+}
