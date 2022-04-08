@@ -43,7 +43,7 @@ module.exports = {
         "contact":"url('./assets/contact.jpg')",
         "apropos":"url('./assets/apropos.jpg')",
         "equipe":"url('./assets/equipe2.jpg')",
-        "acceuil":"url('./assets/contact-back.jpg')",
+        "acceuil":"url('./assets/acceuil.jpg')",
       },
 
       flexBasis:{
