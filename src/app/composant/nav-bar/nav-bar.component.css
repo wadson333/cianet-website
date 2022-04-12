@@ -6,3 +6,26 @@
 .active{
     @apply text-usi-blue-400
 }
+
+.nav-item{
+    @apply p-4 border-b border-usi-light-gray-100 
+    md:border-none md:p-0
+}
+
+.nav-bar-container{
+    @apply relative z-10  mx-usi-4px 
+            md:mx-0 md:flex md:justify-end md:flex-grow md:self-center md:static 
+}
+
+.navbar-nav{
+   @apply flex flex-col  bg-usi-light-gray absolute top-6 left-0 w-full border-t border-usi-blue
+   md:flex-row md:justify-end md:flex-grow md:self-center md:static md:bg-white md:border-none
+}
+
+.show{
+    @apply  flex  transition-transform ease-in md:translate-y-0 md:flex;
+}
+
+.hide{
+    @apply hidden  transition-transform ease-out md:translate-y-0 md:flex;
+}

@@ -16,6 +16,9 @@ module.exports = {
       }
     },
     extend: {
+      spacing: {
+        'usi-4px': '-16px',
+      },
       colors:{
         "usi-orange-400":"#fb923c",
         "usi-blue-900":"#030e19",

@@ -6,8 +6,7 @@
 .usi-col-13{
     border-color: rgba(0,0,0 /25%);
 }
-
+ 
 .user-center{
-   margin-left: 2%;
-   margin-right: 2%;
+   @apply sm:mx-[2%]
 }

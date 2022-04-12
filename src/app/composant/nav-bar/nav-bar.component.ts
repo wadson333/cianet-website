@@ -8,8 +8,22 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
 
   constructor() { }
+  toggleMenuB=false;
+  toggleMenuIco={
+    close:"fas fa-times",
+    default:"fas fa-bars"
+  }
+
 
   ngOnInit(): void {
   }
+  
+  toggleMenu(){
+    this.toggleMenuB=!this.toggleMenuB;
+  }
 
+  closeNav(){
+    if(this.toggleMenuB) this.toggleMenuB=false;
+       
+  }
 }
