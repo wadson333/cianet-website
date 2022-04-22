@@ -1,15 +1,5 @@
-<div class="accordion">
-
-    <div class="accordion-title usi-transition" (click)="toggleUpOrDown()" 
-    [ngStyle]="accordionData.toggle ? { 'border-color':'#1873cc'}:{ 'color':'inehrit'} ">
-        <span class="usi-transition"> {{accordionData.toggle && altTitle ?  altTitle:title }}</span>
-        <div class="usi-transition">
-            <i [ngClass]="accordionData.toggle ? accordionData.iconUp : accordionData.iconDown"></i> 
-        </div>
-    </div>
-
-    <div class="accordion-content usi-transition ease-in px-6  py-6"  *ngIf="accordionData.toggle">
-        <ng-content class=""></ng-content>
-    </div>
-    
+<div class="accordion" #elem>
+    <ul id="accordion-list">
+        <ng-content></ng-content>
+    </ul>
 </div>

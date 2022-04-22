@@ -11,7 +11,7 @@
                     <span class="font-semibold text-xs md:text-sm">Unite de systeme d'information</span>
                     
                 </h1>
-            </div>
+            </div> 
 
             <div class="md:hidden z-10" >
                 <span class="text-gray-700 text-2xl" (click)="toggleMenu()">
@@ -20,8 +20,9 @@
             </div>
         </div>
         
-        <div class="nav-bar-container">
-            <ul class="navbar-nav " [ngClass]="toggleMenuB ? 'show' : 'hide'" (click)="closeNav()">
+        
+        <div class="nav-bar-container"  [ngClass]="toggleMenuB ? 'show' : 'hide'" >
+            <ul class="navbar-nav "  (click)="closeNav()">
                 <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
                     [routerLinkActive]="'active'" [routerLink]="['/accueil/']" >Accueil</a>
                 </li>

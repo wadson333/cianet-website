@@ -1,0 +1,111 @@
+ .title-container{
+    @apply relative w-full py-2 
+ }
+ 
+ .title{
+     @apply text-3xl font-semibold text-usi-black-text
+ }
+
+ .row{
+     @apply  flex flex-row justify-between py-8
+ }
+
+ .center{
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+ }
+ .w-bg-linear{
+    background-image : radial-gradient(circle,rgba(190, 190, 190,.7),#c7c7c7)
+ }
+
+ .header-back-linear{
+    background-image: linear-gradient(105deg,
+     rgba(15, 72, 128, 1) 0%, rgba(18, 86, 153, 0.8) 50%, transparent 70%);
+ }
+
+ .rea-center{
+   @apply sm:mx-[1%] md:mx-[2%]
+}
+
+/***************************************** section 1 ****************************************/
+
+.att-card-container{
+   @apply flex flex-col 
+   sm:flex-row sm:justify-between
+}
+ .att-card{
+    @apply my-2 p-6 border border-usi-gray rounded-md shadow-sm
+    sm:basis-usi-1/2 sm:my-0
+ }
+
+ .att-card-title{
+   @apply text-usi-blue-400 font-semibold text-lg mb-3
+ }
+
+ .att-card-content{
+   @apply text-sm
+ }
+
+ /******************************************* setion 2 *******************************************/
+ .rea-row{
+    @apply  flex flex-row flex-wrap justify-center py-8 
+    sm:justify-start
+ }
+ 
+ .rea-card{
+   @apply basis-usi-1.2/4 min-w-[345px] sm:min-w-[290px] max-w-[345px] my-3
+      lg:my-0
+ }
+
+ .rea-card-top{
+   @apply text-center
+ }
+
+ .rea-card-logo{
+    @apply relative h-20 w-20 rounded-full mx-auto bg-usi-orange-400 shadow-md
+ }
+
+ .rea-card-title{
+    @apply uppercase text-2xl tracking-wide font-semibold py-2 text-usi-blue-700
+ }
+
+ .rea-card-content{
+    @apply px-4 text-center text-base;
+ }
+
+ /************************************* section 3 ***************************************/
+ .dir-row{
+    @apply flex flex-col
+     md:justify-start md:flex-row md:flex-wrap
+ }
+
+ .dir-card{
+   @apply basis-usi-1/2 flex flex-col my-3
+   sm:flex-row sm:justify-center md:flex-wrap lg:flex-nowrap
+ }
+
+ .dir-picture{
+    @apply relative text-center bg-usi-light-gray px-2 max-w-[240px] max-h-[270px] self-center
+    md:self-auto
+
+ }
+
+ .dir-picture img{
+    @apply max-w-[220px] max-h-[270px]
+ }
+
+ .dir-content-container{
+    @apply p-2 text-center min-w-[295px] max-w-[420px] self-center
+    sm:text-left sm:self-auto  md:min-w-[250px] md:max-w-[350px]  md:text-center lg:text-left
+ }
+
+ .dir-user-name{
+    @apply text-xl tracking-wide text-white font-bold capitalize my-1
+ }
+
+ .dir-user-poste{
+    @apply text-base font-semibold text-usi-light-gray capitalize mx-1 my-1 
+ }
+
+ .dir-user-bio{
+    @apply text-sm py-2 text-usi-light-gray 
+ }

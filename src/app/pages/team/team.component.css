@@ -1,5 +1,5 @@
  .container .row{
-    @apply my-12
+    @apply  py-8 my-4
  }
 
 
@@ -9,4 +9,8 @@
  
 .user-center{
    @apply sm:mx-[2%]
+}
+
+.title{
+   @apply text-3xl font-semibold text-usi-black-text
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit,AfterViewInit,OnChanges,OnDestroy, Input, ElementRef, ViewChild } from '@angular/core';
 import  * as L  from 'leaflet'
-import  'leaflet-routing-machine'
 
 @Component({
   selector: 'app-map',

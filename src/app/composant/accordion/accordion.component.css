@@ -1,5 +1,3 @@
-.accordion-title{
-    @apply text-lg font-bold flex justify-between text-usi-black-text cursor-pointer border border-usi-gray
-     py-3 px-4 mb-0.5 bg-usi-light-gray-100 shadow-lg rounded-sm
-   /* border-b */  
+#accordion > li{
+
 }

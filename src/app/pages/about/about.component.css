@@ -1,0 +1,8 @@
+.row{
+    @apply py-8 my-4
+}
+
+.title{
+    @apply text-3xl font-semibold text-usi-black-text mb-5 
+    md:my-0
+}

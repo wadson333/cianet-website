@@ -1,27 +1,30 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, ContentChildren, OnInit, QueryList } from '@angular/core';
+import { AccordionLinkComponent } from './accordion-link/accordion-link.component';
 
 @Component({
   selector: 'app-accordion',
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.css']
 })
-export class AccordionComponent implements OnInit {
-
-  @Input() title:string="accodion";
-  @Input() altTitle:string="";
-
-  accordionData={
-    toggle:false,
-    iconUp:"fa-solid fa-chevron-up",
-    iconDown:"fa-solid fa-chevron-down"
-  }
+export class AccordionComponent implements OnInit,AfterContentInit{
+  @ContentChildren(AccordionLinkComponent) accordionLinks!: QueryList<AccordionLinkComponent>;
+  
   constructor() { }
-
+  
   ngOnInit(): void {
   }
+
+  ngAfterContentInit(): void {
+   this.accordionLinks.toArray().forEach((li: AccordionLinkComponent) => {
+     li.toggle.subscribe((open) => {
+       this.openLink(li,open);
+     });
+   });
+  }
   
-  toggleUpOrDown(){
-    this.accordionData.toggle=!this.accordionData.toggle;
+  openLink(accordionLink: AccordionLinkComponent,open:boolean) {
+    this.accordionLinks.toArray().forEach(li => li.toggleOpen = false);
+    accordionLink.toggleOpen = open;
   }
 
 }

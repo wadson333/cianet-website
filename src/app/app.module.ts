@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { MapComponent } from './composant/map/map.component';
 import { HeaderPictureComponent } from './composant/header-picture/header-picture.component';
 import { SocialMenuComponent } from './composant/social-menu/social-menu.component';
 import { AccordionComponent } from './composant/accordion/accordion.component';
+import { AccordionLinkComponent } from './composant/accordion/accordion-link/accordion-link.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +38,13 @@ import { AccordionComponent } from './composant/accordion/accordion.component';
     MapComponent,
     HeaderPictureComponent,
     SocialMenuComponent,
-    AccordionComponent
+    AccordionComponent,
+    AccordionLinkComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

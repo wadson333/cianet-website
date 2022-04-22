@@ -1,0 +1,50 @@
+.accordion-top{
+    @apply  flex justify-between bg-white border border-white rounded-md shadow-sm cursor-pointer
+    mb-2
+}
+
+.accordion-top-title{
+    @apply py-3 px-4 flex-grow text-lg font-semibold ;
+    
+}
+
+.accordion-top-icon{
+    @apply py-3 px-4  text-right ;
+}
+
+.icon-show{
+    animation: showIcon .3s ease forwards;
+    @apply text-usi-orange-400;
+    
+}
+
+.icon-hide{
+    animation: hideIcon .3s ease forwards;
+    @apply text-usi-black-text;
+   
+}
+
+@keyframes showIcon{
+    0%{
+        transform:rotate(0);
+    }
+
+    100%{
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes hideIcon{
+    0%{
+        transform:rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.accordion-bottom{
+    @apply px-6 pb-5 pt-3 -mt-2 text-base
+}
+/* clip-path: polygon(0 0,100% 0, 90% 100%, 0 100%); */
