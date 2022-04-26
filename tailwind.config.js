@@ -43,10 +43,10 @@ module.exports = {
       },
 
       backgroundImage:{
-        "contact":"url('./assets/contact.jpg')",
-        "apropos":"url('./assets/apropos.jpg')",
-        "equipe":"url('./assets/equipe1.png')",
-        "acceuil":"url('./assets/acceuil.jpg')",
+        "contact":"url('./assets/backgroundImage/contact.jpg')",
+        "apropos":"url('./assets/backgroundImage/apropos.jpg')",
+        "equipe":"url('./assets/backgroundImage/equipe1.png')",
+        "acceuil":"url('./assets/backgroundImage/acceuil.jpg')",
       },
 
       flexBasis:{

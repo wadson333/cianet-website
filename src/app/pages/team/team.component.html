@@ -14,9 +14,14 @@
             <h1 class="title">La coordination</h1>
             <div class="flex flex-row flex-wrap justify-center 
             md:justify-start py-4">
-                <app-user-card class="basis-usi-1.2/4 "></app-user-card>
-                <app-user-card class="basis-usi-1.2/4 user-center"></app-user-card> 
-                <app-user-card class="basis-usi-1.2/4"></app-user-card> 
+                <app-user-card class="basis-usi-1.2/4 " 
+                [userName]="'Jean Barthol Aluc'" [userRole]="'Directeur'" [userPicture]="'dr Aluc.jpg'"> </app-user-card>
+                
+                <app-user-card class="basis-usi-1.2/4 user-center"
+                [userName]="'Shiltone Beon'" [userRole]="'Informaticien'" [userPicture]="'dr Aluc.jpg'"></app-user-card> 
+                <app-user-card class="basis-usi-1.2/4"
+                [userName]="'Calixte Stephano'" [userRole]="'Ingenieur'" [userPicture]="'dr Aluc.jpg'"></app-user-card> 
+
             </div>    
 
             <div class="row">
