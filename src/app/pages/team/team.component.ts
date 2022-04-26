@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class TeamComponent implements OnInit {
   pageLabel="L'equipe d'usi"
   backgroundImage='bg-equipe'
-  pageTitle="Notre equipe"
+  pageTitle="Nos équipes"
 
   constructor() { }
 

@@ -45,7 +45,7 @@ module.exports = {
       backgroundImage:{
         "contact":"url('./assets/contact.jpg')",
         "apropos":"url('./assets/apropos.jpg')",
-        "equipe":"url('./assets/equipe2.jpg')",
+        "equipe":"url('./assets/equipe1.png')",
         "acceuil":"url('./assets/acceuil.jpg')",
       },
 
