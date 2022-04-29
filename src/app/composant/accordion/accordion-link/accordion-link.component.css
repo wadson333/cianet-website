@@ -4,7 +4,7 @@
 }
 
 .accordion-top-title{
-    @apply py-3 px-4 flex-grow text-lg font-semibold ;
+    @apply py-3 px-4 flex-grow text-base font-semibold ;
     
 }
 

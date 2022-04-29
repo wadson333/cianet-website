@@ -34,6 +34,7 @@ module.exports = {
         "usi-light-gray":"#f7f7f7",
         "usi-light-gray-100":"#ddd",
         "usi-gray":"#c7c7c7",
+        "usi-dark-gray":"#565656",
         "usi-black":"#111",
         "usi-black-text":"#222",
         "usi-border-gray":"#aaa"

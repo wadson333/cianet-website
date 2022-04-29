@@ -24,25 +24,31 @@
 
  .rea-center{
    @apply sm:mx-[1%] md:mx-[2%]
-}
+ }
+
+ .usi-link{
+   @apply text-usi-blue-200 font-light text-base tracking-wide border-b border-usi-blue-200
+   hover:text-usi-blue-300 hover:px-4 hover:border-usi-blue-300 ;
+   transition: all .3s;
+ }
 
 /***************************************** section 1 ****************************************/
 
 .att-card-container{
-   @apply flex flex-col 
+   @apply flex flex-col  my-4
    sm:flex-row sm:justify-between
 }
  .att-card{
-    @apply my-2 p-6 border border-usi-gray rounded-md shadow-sm
+    @apply my-2 p-6 border border-[rgba(0,0,0,.2)] rounded-md shadow-sm text-base
     sm:basis-usi-1/2 sm:my-0
  }
 
  .att-card-title{
-   @apply text-usi-blue-400 font-semibold text-lg mb-3
+   @apply text-usi-black font-semibold mb-3;
  }
 
  .att-card-content{
-   @apply text-sm
+   @apply  text-usi-dark-gray font-light inline-block
  }
 
  /******************************************* setion 2 *******************************************/
@@ -52,7 +58,7 @@
  }
  
  .rea-card{
-   @apply basis-usi-1.2/4 min-w-[345px] sm:min-w-[290px] max-w-[345px] my-3
+   @apply relative basis-usi-1.2/4 min-w-[345px]  sm:min-w-[290px] max-w-[345px] my-3 pb-5
       lg:my-0
  }
 
@@ -65,11 +71,18 @@
  }
 
  .rea-card-title{
-    @apply uppercase text-2xl tracking-wide font-semibold py-2 text-usi-blue-700
+    @apply py-2; 
+    
+ }
+
+ .rea-card-title a{
+   @apply inline-block px-1 uppercase text-xl tracking-wide leading-relaxed font-extralight 
+       text-usi-blue-200 hover:text-usi-blue-300 hover:underline;
+   transition: all .3s; 
  }
 
  .rea-card-content{
-    @apply px-4 text-center text-base;
+    @apply px-4 text-center flex-grow text-base mb-5;
  }
 
  /************************************* section 3 ***************************************/
@@ -84,7 +97,7 @@
  }
 
  .dir-picture{
-    @apply relative text-center bg-usi-light-gray px-2 max-w-[240px] max-h-[270px] self-center
+    @apply relative text-center bg-usi-light-gray p-0.5 max-w-[240px] max-h-[270px] self-center
     md:self-auto
 
  }
@@ -99,11 +112,11 @@
  }
 
  .dir-user-name{
-    @apply text-xl tracking-wide text-white font-bold capitalize my-1
+    @apply text-xl tracking-wide text-white font-bold capitalize mb-1
  }
 
  .dir-user-poste{
-    @apply text-base font-semibold text-usi-light-gray capitalize mx-1 my-1 
+    @apply text-base font-extralight text-usi-light-gray capitalize mb-1 -mt-1
  }
 
  .dir-user-bio{

@@ -1,62 +1,73 @@
 <div>
     <div class="relative">
-        <app-header-picture [backgroundImage]="backgroundImage" ></app-header-picture>
-        
+        <app-header-picture [backgroundImage]="backgroundImage"></app-header-picture>
         <div class="header-back-linear absolute top-0 left-0 h-full w-full">
             <div class="container">
-                <div class="w-1/2 h-96 flex flex-col justify-center py-4">
-                    <p class="header-slogan text-left text-3xl leading-snug
-                     font-semibold text-usi-light-gray
-                     sm:text-5xl
-                     ">La technologie au service de la communauté éducative
-                     <!-- <span class="font-bold">MENFP</span>--> </p> 
+                <div class="w-2/3 h-96 flex flex-col justify-center py-4">
+                    <p class="header-slogan text-3xl leading-normal font-extralight text-white sm:text-5xl">
+                        La technologie au service de la communauté éducative
+                    </p>
                 </div>
-                
             </div>
         </div>
     </div>
-    
 
-    <div  class="row border-t-4 bg-white border-usi-blue-500">
+
+    <div class="row border-t-4 bg-white border-usi-blue-500">
         <div class="container">
             <div class="att-card-container">
                 <div class="att-card">
-                    <h1 class="att-card-title">SIGE</h1>
-                    <p class="att-card-title-2"> 
+                    <h1 class="att-card-title">Presentation de l'usi 
+                    </h1>
+                    <!-- <p class="att-card-title-2">
                         Système d'Information sur la Gestion de l'Education (SIGE-MENFP)
-                    </p>
+                    </p> -->
                     <p class="att-card-content">
-                        L’information constitue le fondement de la gestion, de la planification et de l’évaluation d’un système éducatif. Lors de l’établissement d’un processus de gestion de l’éducation, le système d’information sur la gestion de l’éducation (SIGE) doit informer les différents acteurs et partenaires sur l’état du secteur, son efficacité interne et externe, son fonctionnement pédagogique et institutionnel, sa performance, ses lacunes et ses besoins.
+                        <!-- L’information constitue le fondement de la gestion, de la planification et de l’évaluation d’un système éducatif. Lors de l’établissement d’un processus de gestion de l’éducation, le système d’information sur la gestion de l’éducation (SIGE) doit informer
+                        les différents acteurs et partenaires sur l’état du secteur, son efficacité interne et externe, son fonctionnement pédagogique et institutionnel, sa performance, ses lacunes et ses besoins. -->
+                        L’Unité de Systèmes d’Information du MENFP (USI-MENFP) est une structure technique, directement rattachée à la Direction Générale du Ministère de l’Éducation Nationale et de la Formation Professionnelle, créée par décision ministérielle en date du 22
+                        Janvier 2016.
                     </p>
-                  </div>
+                    <span> 
+                        <a class="usi-link" href="#">lire la suite
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a> 
+                    </span>
+
+                </div>
 
                 <div class="att-card">
-                    <h1 class="att-card-title">INFRASTRUCTURE TECHNOLOGIQUE MENFP</h1>
-                    <p class="att-card-content"> 
-                        LeMENFP a fait le tournant vers le numérique, nous avons donc fait également le choix pour une infrastructure technologique. 
-Le bon choix dans l’infrastructure technologique est la base d’un travail efficace et efficiente dans toutes les organisation de nos jours
-L’écosystème du SIGE comporte tous les systèmes applicatifs en exploitation dans l’infrastructure technologique. C’est un système intégré et urbanisé où toutes les  données de référence peuvent communiquer entre elles à partir de leur identifiant unique.
-
+                    <h1 class="att-card-title"> Attributions de l’USI </h1>
+                    <p class="att-card-content">
+                        <!-- LeMENFP a fait le tournant vers le numérique, nous avons donc fait également le choix pour une infrastructure technologique. Le bon choix dans l’infrastructure technologique est la base d’un travail efficace et efficiente dans toutes les organisation
+                        de nos jours L’écosystème du SIGE comporte tous les systèmes applicatifs en exploitation dans l’infrastructure technologique. C’est un système intégré et urbanisé où toutes les données de référence peuvent communiquer entre elles
+                        à partir de leur identifiant unique. -->
+                        Outre les fonctions administratives, les métiers de l’USI sont l’exploitation, la maîtrise d’œuvre, la maîtrise d’ouvrage et l’AMO, le conseil, la conduite du changement, la conduite de projet, l’innovation et la veille technologique.
                     </p>
-                    
+                    <span> 
+                        <a class="usi-link" href="#">lire la suite
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a> 
+                    </span>
+
                 </div>
             </div>
-            
+
         </div>
     </div>
 
-    <div  class="row">
+    <div class="row">
         <div class="container">
             <div class="title-container">
                 <h3 class="title"> Réalisation</h3>
             </div>
-            
+
             <div class="rea-row">
                 <div class="rea-card">
-                    <div class="rea-card-top"> 
+                    <div class="rea-card-top">
                         <div class="rea-card-logo"></div>
                         <h3 class="rea-card-title">
-                            SIGEEE
+                            <a class="" href="#">SIGEEE</a>   
                         </h3>
                     </div>
                     <div class="py-2">
@@ -64,73 +75,75 @@ L’écosystème du SIGE comporte tous les systèmes applicatifs en exploitation
                             Système d’Information de Gestion des Elèves, Enseignants et Ecoles (SIGEEE).
                         </p>
                     </div>
-                    <div class="hidden"></div>   
                 </div>
 
                 <div class="rea-card rea-center">
-                    <div class="rea-card-top"> 
+                    <div class="rea-card-top">
                         <div class="rea-card-logo"></div>
                         <h3 class="rea-card-title">
-                            SIGERH
+                            <a class="" href="#"> SIGERH</a>    
                         </h3>
                     </div>
                     <div class="py-2">
                         <p class="rea-card-content">
-                            Cette application permet à la Direction des Ressources Humaines du MENFP de faire la saisie et la gestion de son personnel administratif et de son personnel enseignant. Elle permet d’effectuer la saisie en ligne de données via le réseau intranet reliant les dix (10) directions départementales et les autres directions centrales du MENFP.
+                            Cette application permet à la Direction des Ressources Humaines du MENFP de faire la saisie et la gestion de son personnel administratif et de son personnel enseignant. Elle permet d’effectuer la saisie en ligne de données via le réseau intranet reliant
+                            les dix (10) directions départementales et les autres directions centrales du MENFP.
                         </p>
                     </div>
-                    <div class="hidden"></div>   
                 </div>
 
                 <div class="rea-card">
-                    <div class="rea-card-top"> 
+                    <div class="rea-card-top">
                         <div class="rea-card-logo"></div>
                         <h3 class="rea-card-title">
-                            EVALUATION-PEQH
+                            <a class="" href="#">EVALUATION-PEQH</a>   
+                            
                         </h3>
                     </div>
                     <div class="py-2">
                         <p class="rea-card-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                            Nisi quis eligendi odit molestias dolorum sit error omnis velit.
-                            Ut aperiam natus reprehenderit sapiente eaque,
-                            quidem ducimus doloremque provident corporis distinctio.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quis eligendi odit molestias dolorum sit error omnis velit. Ut aperiam natus reprehenderit sapiente eaque, quidem ducimus doloremque provident corporis distinctio.
                         </p>
                     </div>
-                    <div class="hidden"></div>   
                 </div>
-                
+
             </div>
         </div>
     </div>
     <!-- section directeur -->
-    <div  class="row bg-usi-blue-500">
+    <div class="row bg-usi-blue-500">
         <div class="container">
             <div class="dir-row">
                 <div class="dir-card">
                     <div class="dir-picture">
-                        <img src="./assets/userPicture/dr Aluc.jpg"  width="1200" height="1200" alt="" srcset="">
+                        <img src="./assets/userPicture/dr Aluc.jpg" width="1200" height="1200" alt="le directeur" >
                     </div>
 
                     <div class="dir-content-container">
                         <h3 class="dir-user-name"> Jean barthole Aluc</h3>
                         <h3 class="dir-user-poste">Coordonnateur</h3>
                         <p class="dir-user-bio">
-                            Résumé du Coordonnateur
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Ratione dolor delectus minima perspiciatis quisquam,
+                            doloribus nesciunt natus pariatur mollitia porro fugiat,
+                            corrupti, dolore vel numquam ex eum omnis voluptates. Illo?
                         </p>
                     </div>
                 </div>
-                
+
                 <div class="dir-card">
                     <div class="dir-picture">
-                        <img src=".\assets\userPicture\Mr Pierre Jean.jpg" width="1200" height="1200" alt="" srcset="">
+                        <img src=".\assets\userPicture\Mr Pierre Jean.jpg" width="1200" height="1200" alt="ledirecteur adjoint" >
                     </div>
 
                     <div class="dir-content-container">
                         <h3 class="dir-user-name"> Pierre Jean</h3>
                         <h3 class="dir-user-poste">Coordonnateur Adjoint</h3>
                         <p class="dir-user-bio">
-                            Résumé du Coordonnateur Adjoint.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Ratione dolor delectus minima perspiciatis quisquam,
+                            doloribus nesciunt natus pariatur mollitia porro fugiat,
+                            corrupti, dolore vel numquam ex eum omnis voluptates. Illo?
                         </p>
                     </div>
                 </div>
@@ -147,20 +160,16 @@ L’écosystème du SIGE comporte tous les systèmes applicatifs en exploitation
             <div class="py-8">
                 <app-accordion title="'Titre'">
                     <app-accordion-link [title]="'Développement du SIGE'">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Quia, magnam! Eaque numquam maxime aperiam eum eos molestiae quae assumenda
-                        molestias quidem magnam ab dolorem tempora laborum asperiores, ducimus velit nam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, magnam! Eaque numquam maxime aperiam eum eos molestiae quae assumenda molestias quidem magnam ab dolorem tempora laborum asperiores, ducimus velit nam?
                     </app-accordion-link>
 
                     <app-accordion-link [title]="'Infrastructure Technologique MENFP'">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Quia, magnam! Eaque numquam maxime aperiam eum eos molestiae quae assumenda
-                        molestias quidem magnam ab dolorem tempora laborum asperiores, ducimus velit nam?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, magnam! Eaque numquam maxime aperiam eum eos molestiae quae assumenda molestias quidem magnam ab dolorem tempora laborum asperiores, ducimus velit nam?
                     </app-accordion-link>
-                </app-accordion> 
+                </app-accordion>
             </div>
-             
+
         </div>
     </div>
- 
+
 </div>
