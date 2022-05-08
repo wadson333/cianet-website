@@ -1,11 +1,21 @@
-<section id="breadcrumb" class="text-usi-black-text py-3 border-b border-usi-border-gray mb-8">
+<section id="breadcrumb" class="">
     <div class="container">
         <h3 class="text-sm">
+            <!-- base link in the breadcrumb (acceuil) and the separator -->
             <span>
-                <a class="text-usi-blue-200 hover:underline usi-transition" href="#">Acceuil</a>
+                <a class="base-link" [routerLink]="['/accueil/']">Acceuil</a>
                 <span class="mx-2"><i class="fal fa-greater-than"></i></span>
             </span>
-            <span class="breadcrumb-active tracking-wide"> {{pageLabel}}</span>     
+
+            <!-- xng breadcrumb  -->
+            <span class="tracking-wide">
+                <xng-breadcrumb [separator]="'iconTemplate'" class="inline-block"></xng-breadcrumb>
+                <!-- separator for the breadcrumb url -->
+                <ng-template #iconTemplate>
+                    <i class="fal fa-greater-than"></i>
+                </ng-template>
+            </span>     
         </h3>
-    </div>   
+        
+    </div>    
 </section>

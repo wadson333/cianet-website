@@ -1,5 +1,10 @@
-<div class="py-12 text-center text-usi-black-text">
-    <h1 class="text-4xl font-bold my-4">404</h1>
-    <h3 class="text-lg my-2">La page que vous vous cherher n'existe pas</h3>
-    <h3><a [routerLink]="'/accueil'" class="usi-transition text-usi-blue-200 hover:underline" > Retour à l’accueil</a> </h3>
+<div class="h-[70vh] w-full relative border-t border-usi-blue-400">
+    <div class=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full px-4 md:w-1/2 text-usi-black-text">
+        <h2 class="text-xl font-bold my-4">Oups erreur 404 !!! Page non trouvée</h2>
+        <h3 class="text-base my-2">Le contenu auquel vous tentez d'accéder n'existe pas ou n'est plus disponible.</h3>
+        <div class="btn">
+            <a [routerLink]="'/accueil'" class="usi-transition" > Retour à l’accueil</a>
+         </div>
+    </div>
 </div>
+

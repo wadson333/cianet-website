@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { BreadcrumbModule } from "xng-breadcrumb";
+import { BreadcrumbService } from 'xng-breadcrumb';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -44,9 +47,13 @@ import { AccordionLinkComponent } from './composant/accordion/accordion-link/acc
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    BreadcrumbModule,
   ],
-  providers: [],
+  providers: [
+    BreadcrumbService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,6 +1,8 @@
-.social-link{
-    @apply text-white hover:text-usi-orange-400 transition-all duration-150
+ul{
+    @apply w-full flex justify-center gap-10  sm:justify-end
 }
-.social-li{
-    @apply mx-4
+
+/* link element style */
+.social-link{
+    @apply text-white hover:text-usi-orange-400 transition
 }

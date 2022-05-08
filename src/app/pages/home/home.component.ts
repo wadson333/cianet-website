@@ -9,7 +9,7 @@ export class HomeComponent implements OnInit {
   backgroundImage='bg-acceuil'
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { 
   }
    
 }

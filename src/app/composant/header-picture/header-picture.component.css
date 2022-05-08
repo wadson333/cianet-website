@@ -1,7 +1,13 @@
-#section-header-title{
-    position: absolute;
-    top:40%;
-    left:0;
-    transform: translateY(-50%); 
+/* picture image style */
+#section-top{
+    @apply w-full h-3/5vh bg-center bg-cover bg-no-repeat
 }
 
+/* page title style */
+#section-header-title{
+    @apply  absolute top-[40%] left-0 -translate-y-1/2 inline-block py-8
+    text-3xl md:text-4xl text-white font-bold 
+    border-b-[18px] border-usi-blue-100
+    
+}
+ 

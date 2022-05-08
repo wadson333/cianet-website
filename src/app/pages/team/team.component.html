@@ -1,13 +1,14 @@
 <div>
     <app-header-picture [backgroundImage]="backgroundImage" [pageTitle]="pageTitle"></app-header-picture>
-    <app-breadcrump [pageLabel]="pageLabel"></app-breadcrump>
+    <app-breadcrump ></app-breadcrump>
     <div class="container">
         <div class="row">
             <p class="anonce">
                 L’organisation interne de l’Unité de Système d’Information (USI) est basée sur la compétence, l’expérience et l’assurance qualité. Elle regroupe les fonctions d’organisation, de méthode et de fourniture de services.
             </p>
         </div>
-
+        
+        <!-- coordination  -->
         <div class="row">
             <h1 class="title">La coordination</h1>
             <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
@@ -18,12 +19,14 @@
                     <br>du directeur adjoint : <span class="font-semibold">Pierre Jean</span>
                     <br>des spécialistes (généralement des consultants en qualité et méthode ).
                 </p>
-
-                <app-user-card class="basis-usi-1.2/4 " [userName]="'Jean Barthol Aluc'" [userRole]="'Coordonateur'" [userPicture]="'dr Aluc.jpg'"> </app-user-card>
-                <app-user-card class="basis-usi-1.2/4 user-center" [userName]="'Pierre JEAN'" [userRole]="'Coordonateur Adjoint'" [userPicture]="'Mr Pierre Jean.jpg'"></app-user-card>
+                <div class="row-grid">
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Jean Barthol Aluc'" [userRole]="'Coordonateur'" [userPicture]="'dr Aluc.jpg'"> </app-user-card>
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Pierre JEAN'" [userRole]="'Coordonateur Adjoint'" [userPicture]="'Mr Pierre Jean.jpg'"></app-user-card>
+                </div>
             </div>
         </div>
 
+        <!-- Secretariat -->
         <div class="row">
             <h1 class="title">Le Secrétariat</h1>
             <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
@@ -35,74 +38,85 @@
                     <br>b- Stéphanie Myril
                     <br>c- Alda François Moïse
                 </p>
-                <app-user-card class="basis-usi-1.2/4 " [userName]="'Manoucheka EXTRA'" [userRole]="'Technicienne Sénior I Niveau I'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4 user-center" [userName]="'Stéphanie MYRIL'" [userRole]="'Technicienne Sénior II'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4" [userName]="'Alda Francois MOISE '" [userRole]="'Responsable de Section'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
+                <div class="row-grid">
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Manoucheka EXTRA'" [userRole]="'Technicienne Sénior I Niveau I'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Stéphanie MYRIL'" [userRole]="'Technicienne Sénior II'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4" [userName]="'Alda Francois MOISE '" [userRole]="'Responsable de Section'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
+                </div>
+                
             </div>
         </div>
 
+        <!-- Developpement -->
         <div class="row">
             <h1 class="title">L'Equipe Projet</h1>
-            <p class="anonce">
-                Elle travaille à la réalisation de tous les projets spécifiques à la bonne marche de l’Unité et ceux d’autres structures internes ou externes nécessaires au développement du système d’information du MENFP.
-                <br>
-                <br> L’équipe Projet regroupe les développeurs (DevOps, full-stack, back-end et front-end). Elle a la maîtrise des compétences techniques intrinsèquement liées au développement des applications. (Développement et exploitation de logiciels
-                ainsi que l’administration de systèmes et d’outils spécifiques). Ils ont des compétences avérées en programmation (écriture et compréhension du code, connaissance des langages de programmation, développement de scripts et intégration),
-                en déploiement d’infrastructures (mise en place de passerelles pour transférer des opérations ou des données) ainsi qu’en évaluation d’applications (capacité à évaluer le fonctionnement des applications, à procéder à des ajustements en
-                termes de ressources et d’outils et à mesurer les performances des solutions mises en place). Cette équipe procède à :
-                <br>
-                <br> •l’automatisation du processus de déploiement des applications et des taches d’opérations quotidiennes ;
-                <br> •la réalisation de phases de test, en amont du développement dans plusieurs environnements tels que TI, TA, TU, PPRD et PRD,
-                <br> •la mise en place du système de surveillance de la qualité du processus de développement des applications.
-                <br>
-                <br> •Elle s’occupe aussi des infrastructures matérielles et des logiciels d’interconnexion, de l'optimisation du fonctionnement des équipements du réseau et de la bonne circulation des informations immatérielles à travers le réseau intranet
-                et/ou internet. Elle s’assure de la sécurité du réseau et la gestion des privilèges.
-                <br><br>Elle est formée de :
-                <br>a) Vladimir Obdéus
-                <br>b) Balthazar Rosemé
-                <br>c) John Peter Thomas
-                <br>d) Bermane Paul.
-                <br>e) Mackenson Noel
-            </p>
             <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
-                <app-user-card class="basis-usi-1.2/4 " [userName]="'Bermane PAUL'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="''"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4 user-center" [userName]="'John Peter THOMAS'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'John Peter THOMAS.jpg'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4" [userName]="'Vladimir OBDEUS'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'Vladimir OBDEUS.jpg'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4" [userName]="'Balthazar ROSEME'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'Balthazar ROSEME.JPG'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4 user-center" [userName]="'Wadson JOSEPH'" [userRole]="'Analyste Programmeur Sénior II'" [userPicture]="''"></app-user-card>
+                <p class="anonce">
+                    Elle travaille à la réalisation de tous les projets spécifiques à la bonne marche de l’Unité et ceux d’autres structures internes ou externes nécessaires au développement du système d’information du MENFP.
+                    <br>
+                    <br> L’équipe Projet regroupe les développeurs (DevOps, full-stack, back-end et front-end). Elle a la maîtrise des compétences techniques intrinsèquement liées au développement des applications. (Développement et exploitation de logiciels
+                    ainsi que l’administration de systèmes et d’outils spécifiques). Ils ont des compétences avérées en programmation (écriture et compréhension du code, connaissance des langages de programmation, développement de scripts et intégration),
+                    en déploiement d’infrastructures (mise en place de passerelles pour transférer des opérations ou des données) ainsi qu’en évaluation d’applications (capacité à évaluer le fonctionnement des applications, à procéder à des ajustements en
+                    termes de ressources et d’outils et à mesurer les performances des solutions mises en place). Cette équipe procède à :
+                    <br>
+                    <br> •l’automatisation du processus de déploiement des applications et des taches d’opérations quotidiennes ;
+                    <br> •la réalisation de phases de test, en amont du développement dans plusieurs environnements tels que TI, TA, TU, PPRD et PRD,
+                    <br> •la mise en place du système de surveillance de la qualité du processus de développement des applications.
+                    <br>
+                    <br> •Elle s’occupe aussi des infrastructures matérielles et des logiciels d’interconnexion, de l'optimisation du fonctionnement des équipements du réseau et de la bonne circulation des informations immatérielles à travers le réseau intranet
+                    et/ou internet. Elle s’assure de la sécurité du réseau et la gestion des privilèges.
+                    <br><br>Elle est formée de :
+                    <br>a) Vladimir Obdéus
+                    <br>b) Balthazar Rosemé
+                    <br>c) John Peter Thomas
+                    <br>d) Bermane Paul.
+                    <br>e) Mackenson Noel
+                </p>
+                
+                <div class="row-grid">
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Bermane PAUL'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="''"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'John Peter THOMAS'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'John Peter THOMAS.jpg'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4" [userName]="'Vladimir OBDEUS'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'Vladimir OBDEUS.jpg'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4" [userName]="'Balthazar ROSEME'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'Balthazar ROSEME.JPG'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Wadson JOSEPH'" [userRole]="'Analyste Programmeur Sénior II'" [userPicture]="''"></app-user-card>
+                </div>
             </div>
         </div>
 
+        <!-- support -->
         <div class="row">
             <h1 class="title">Support et Opération</h1>
-            <p class="anonce">
-                <br> L’Equipe Opération et Supports. Cette équipe assure la réponse aux besoins d’assistance des utilisateurs à un nœud quelconque du réseau informatique du ministère. Elle réalise toutes les tâches d’opération relevant du domaine du système
-                d’information du ministère.
-                <br><br> L’équipe Opérations et Support (IT support) comprend les techniciens qui assurent le support informatique aux utilisateurs. Elle a pour fonction principale de trouver des solutions aux usagers. Elle prend en charge les demandes
-                d’assistance des employés et enregistre leur demande afin de les orienter vers une solution. Globalement, son travail consiste à diagnostiquer et identifier le problème, le formuler et le résoudre. Elle doit :
-                <br>récupérer des informations sur les tableaux d'affichage électroniques des fabricants de matériels et de logiciels et la possibilité d'utiliser un logiciel de contrôle à distance (tel que PCAnywhere) ;
-                <br>aider les utilisateurs finaux dans les tâches courantes en utilisant les progiciels standards NPS actuels pour les communications de données ;
-                <br>utiliser les progiciels standards NPS actuels pour l'accès DOINET / Internet (y compris les composants Mosaic, Gopher, FTP et 3270 Emulation) .
-                <br>Parmi les compétences essentielles de l’équipe IT support, il convient de mentionner, entre autres :
-                <br>• Troubleshooting
-                <br>• Application Support
-                <br>• Messaging Support
-                <br>• Network Support
-                <br>• Security Support
-                <br>• System and Hardware Support
-                <br>• Web Support
-                <br>• Design, and Maintenance
-                <br><br>Cette équipe est formée de :
-                <br>1- Stéfano Calixte
-                <br>2- Stéphane Francisque
-                <br>3- Shiltone Albert Béon
-                <br><br>Il est important de souligner que périodiquement, un membre de l’équipe projet ou système est désigné pour assurer de façon rotative le rôle de support à l’équipe Opérations et Support suivant le besoin. L’équipe opération s’assure
-                de la continuité du service au bénéfice de toutes les équipes.
-            </p>
             <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
-                <app-user-card class="basis-usi-1.2/4 " [userName]="'Stefano CALIXTE'" [userRole]="'Informaticien'" [userPicture]="'Stefano Calixte.jpg'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4 user-center" [userName]="'Stéphane FRANCISQUE'" [userRole]="'Informaticien'" [userPicture]="'Stephane FRANCISQUE.jpg'"></app-user-card>
-                <app-user-card class="basis-usi-1.2/4" [userName]="'Shiltone Albert BEON'" [userRole]="'Informaticien'" [userPicture]="'Shiltone A. BEON.jpg'"></app-user-card>
+                <p class="anonce">
+                    <br> L’Equipe Opération et Supports. Cette équipe assure la réponse aux besoins d’assistance des utilisateurs à un nœud quelconque du réseau informatique du ministère. Elle réalise toutes les tâches d’opération relevant du domaine du système
+                    d’information du ministère.
+                    <br><br> L’équipe Opérations et Support (IT support) comprend les techniciens qui assurent le support informatique aux utilisateurs. Elle a pour fonction principale de trouver des solutions aux usagers. Elle prend en charge les demandes
+                    d’assistance des employés et enregistre leur demande afin de les orienter vers une solution. Globalement, son travail consiste à diagnostiquer et identifier le problème, le formuler et le résoudre. Elle doit :
+                    <br>récupérer des informations sur les tableaux d'affichage électroniques des fabricants de matériels et de logiciels et la possibilité d'utiliser un logiciel de contrôle à distance (tel que PCAnywhere) ;
+                    <br>aider les utilisateurs finaux dans les tâches courantes en utilisant les progiciels standards NPS actuels pour les communications de données ;
+                    <br>utiliser les progiciels standards NPS actuels pour l'accès DOINET / Internet (y compris les composants Mosaic, Gopher, FTP et 3270 Emulation) .
+                    <br>Parmi les compétences essentielles de l’équipe IT support, il convient de mentionner, entre autres :
+                    <br>• Troubleshooting
+                    <br>• Application Support
+                    <br>• Messaging Support
+                    <br>• Network Support
+                    <br>• Security Support
+                    <br>• System and Hardware Support
+                    <br>• Web Support
+                    <br>• Design, and Maintenance
+                    <br><br>Cette équipe est formée de :
+                    <br>1- Stéfano Calixte
+                    <br>2- Stéphane Francisque
+                    <br>3- Shiltone Albert Béon
+                    <br><br>Il est important de souligner que périodiquement, un membre de l’équipe projet ou système est désigné pour assurer de façon rotative le rôle de support à l’équipe Opérations et Support suivant le besoin. L’équipe opération s’assure
+                    de la continuité du service au bénéfice de toutes les équipes.
+                </p>
+                
+                <div class="row-grid">
+                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Stefano CALIXTE'" [userRole]="'Informaticien'" [userPicture]="'Stefano Calixte.jpg'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4" [userName]="'Stéphane FRANCISQUE'" [userRole]="'Informaticien'" [userPicture]="'Stephane FRANCISQUE.jpg'"></app-user-card>
+                    <app-user-card class="basis-usi-1.2/4" [userName]="'Shiltone Albert BEON'" [userRole]="'Informaticien'" [userPicture]="'Shiltone A. BEON.jpg'"></app-user-card>
+                </div>
             </div>
         </div>
 

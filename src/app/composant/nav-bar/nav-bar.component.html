@@ -1,43 +1,56 @@
-<nav class="bg-white shadow-sm shadow-gray-200 z-10">
-    <div class="container flex flex-col md:flex-row mx-auto py-6 relative">
-        <div class="flex justify-between md:block">
-            <div class="header-top-left flex mr-16">
-                <div class="bg-usi-blue-400 p-1.5 rounded-md self-center">
-                    <img class="h-8 w-8 self-start" src="../../assets/usi-logo.png" alt="logo usi">
-                </div>
-                <h1 class="text-gray-700 font-bold capitalize self-start ml-2 leading-none">
-                    <span class="text-usi-blue-400 text-2xl font-bold">MENFP-USI</span>
-                <br/> 
-                    <span class="font-semibold text-xs md:text-sm">Unite de systeme d'information</span>
-                    
-                </h1>
-            </div> 
 
-            <div class="md:hidden z-10" >
-                <span class="text-gray-700 text-2xl" (click)="toggleMenu()">
-                    <i [ngClass]="toggleMenuB ? toggleMenuIco.close : toggleMenuIco.default"></i>
-                </span>
+<!-- nav  -->
+<nav class="">
+    <div class="container">
+        <div class="nav-content-container"> 
+            <div class="nav-logo-container">
+                <!-- logo container  -->
+                <div class="header-top-left flex mr-16">
+                    <!-- logo -->
+                    <div class="bg-usi-blue-400 p-1.5 rounded-md self-center">
+                        <img class="h-8 w-8 self-start" src="./assets/usi-logo.png" alt="logo usi">
+                    </div>
+
+                    <!-- logo text -->
+                    <h1 class="font-bold capitalize self-start ml-2 leading-none">
+                        <span class="text-usi-blue-400 text-2xl font-bold">MENFP-USI</span>
+                        <br > 
+                        <span class="font font-semibold text-usi-black-text  text-xs md:text-sm">Unité de systeme d'information</span> 
+                    </h1>
+                </div> 
+    
+                <!-- navbar toggle icon hidden on large screen -->
+                <div class="md:hidden z-10" >
+                    <span class="text-gray-700 text-2xl" (click)="toggleMenu()">
+                        <!-- change the icon  compare to navbar state-->
+                        <i [ngClass]="toggleMenuB ? toggleMenuIco.close : toggleMenuIco.default"></i>
+                    </span>
+                </div>
             </div>
-        </div>
-        
-        
-        <div class="nav-bar-container"  [ngClass]="toggleMenuB ? 'show' : 'hide'" >
-            <ul class="navbar-nav "  (click)="closeNav()">
-                <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
-                    [routerLinkActive]="'active'" [routerLink]="['/accueil/']" >Accueil</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}" 
-                    [routerLinkActive]="'active'"  [routerLink]="['/equipe/']" >Equipes</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
-                    [routerLinkActive]="'active'" [routerLink]="['/a-propos/']" >À propos</a>
-                </li>
-                <li class="nav-item"><a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
-                    [routerLinkActive]="'active'" [routerLink]="['/contact/']" >Contact</a>
-                </li>
-            </ul>
-        </div>
-        
+
+            <!-- nav-link container -->
+            <div class="nav-bar-container"  [ngClass]="toggleMenuB ? 'show' : 'hide'" >
+                <!-- nav-link list -->
+                <ul class="navbar-nav"  (click)="closeNav()">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
+                        [routerLinkActive]="'active'" [routerLink]="['/accueil/']" >Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActiveOptions]="{exact:true}" 
+                        [routerLinkActive]="'active'"  [routerLink]="['/equipe/']" >Equipes</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
+                        [routerLinkActive]="'active'" [routerLink]="['/a-propos/']" >À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLinkActiveOptions]="{exact:true}"
+                        [routerLinkActive]="'active'" [routerLink]="['/contact/']" >Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
     </div>
 </nav> 
  

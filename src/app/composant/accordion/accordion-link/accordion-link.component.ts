@@ -5,6 +5,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   selector: 'app-accordion-link',
   templateUrl: './accordion-link.component.html',
   styleUrls: ['./accordion-link.component.css'],
+  
+  // animation use whe sow and hide the accordion content
   animations:[
     trigger('accordionToggle',[
 
@@ -20,14 +22,6 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
         }),
         animate(300)] 
       ),
-
-      // transition("* => void",[
-      //   style({
-      //     transform:'translateY(0)',
-      //     opacity:0,
-      //   }),
-      //   animate(300)] 
-      // )
     ])
   ]
 })
@@ -41,6 +35,7 @@ export class AccordionLinkComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // event that toggle the accordion link content and emit a custum event to the acoordion component 
   toggleUpOrDown(){
     this.toggleOpen=!this.toggleOpen;
     this.toggle.emit(this.toggleOpen);  

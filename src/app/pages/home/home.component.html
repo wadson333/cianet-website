@@ -1,10 +1,12 @@
 <div>
+    <!-- section 1 (background picture and slogan) -->
     <div class="relative">
         <app-header-picture [backgroundImage]="backgroundImage"></app-header-picture>
-        <div class="header-back-linear absolute top-0 left-0 h-full w-full">
-            <div class="container">
-                <div class="w-2/3 h-96 flex flex-col justify-center py-4">
-                    <p class="header-slogan text-3xl leading-normal font-extralight text-white sm:text-5xl">
+        <!-- header slogan -->
+        <div class="header-back-linear absolute top-0 left-0  h-full w-full">
+            <div class="container h-full">
+                <div class="w-2/3 md:w-1/2 h-full flex flex-col justify-center py-4">
+                    <p class="header-slogan text-3xl leading-normal tracking-wider font-extralight text-white sm:text-4xl">
                         La technologie au service de la communauté éducative
                     </p>
                 </div>
@@ -12,72 +14,85 @@
         </div>
     </div>
 
-
-    <div class="row border-t-4 bg-white border-usi-blue-500">
+    <!-- section 2 ( presentation) -->
+    <section class="row border-t-4 bg-white border-usi-blue-500">
         <div class="container">
             <div class="att-card-container">
+                <!-- presentation card -->
                 <div class="att-card">
-                    <h1 class="att-card-title">Presentation de l'usi 
-                    </h1>
-                    <!-- <p class="att-card-title-2">
-                        Système d'Information sur la Gestion de l'Education (SIGE-MENFP)
-                    </p> -->
+                    <!-- title -->
+                    <h1 class="sub-title att-card-title">Presentation de l'usi </h1>
+                    <!-- card content -->
                     <p class="att-card-content">
-                        <!-- L’information constitue le fondement de la gestion, de la planification et de l’évaluation d’un système éducatif. Lors de l’établissement d’un processus de gestion de l’éducation, le système d’information sur la gestion de l’éducation (SIGE) doit informer
-                        les différents acteurs et partenaires sur l’état du secteur, son efficacité interne et externe, son fonctionnement pédagogique et institutionnel, sa performance, ses lacunes et ses besoins. -->
-                        L’Unité de Systèmes d’Information du MENFP (USI-MENFP) est une structure technique, directement rattachée à la Direction Générale du Ministère de l’Éducation Nationale et de la Formation Professionnelle, créée par décision ministérielle en date du 22
-                        Janvier 2016.
+                        <span>
+                             L’Unité de Systèmes d’Information du MENFP (USI-MENFP) est une structure
+                             technique, directement rattachée à la Direction Générale du Ministère de 
+                             l’Éducation Nationale et de la Formation Professionnelle,
+                             créée par décision ministérielle en date du 22 Janvier 2016.
+                        </span>
+                        <!-- card content link -->
+                        <span> 
+                            <a class="usi-link" href="#">lire la suite
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a> 
+                        </span>
                     </p>
-                    <span> 
-                        <a class="usi-link" href="#">lire la suite
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a> 
-                    </span>
-
                 </div>
-
+                <!-- presentation card -->
                 <div class="att-card">
-                    <h1 class="att-card-title"> Attributions de l’USI </h1>
+                    <!-- title -->
+                    <h1 class="sub-title att-card-title"> Attributions de l’USI </h1>
+                    <!-- card content -->
                     <p class="att-card-content">
-                        <!-- LeMENFP a fait le tournant vers le numérique, nous avons donc fait également le choix pour une infrastructure technologique. Le bon choix dans l’infrastructure technologique est la base d’un travail efficace et efficiente dans toutes les organisation
-                        de nos jours L’écosystème du SIGE comporte tous les systèmes applicatifs en exploitation dans l’infrastructure technologique. C’est un système intégré et urbanisé où toutes les données de référence peuvent communiquer entre elles
-                        à partir de leur identifiant unique. -->
-                        Outre les fonctions administratives, les métiers de l’USI sont l’exploitation, la maîtrise d’œuvre, la maîtrise d’ouvrage et l’AMO, le conseil, la conduite du changement, la conduite de projet, l’innovation et la veille technologique.
+                        <span>
+                            Outre les fonctions administratives, les métiers de l’USI sont l’exploitation, 
+                            la maîtrise d’œuvre, la maîtrise d’ouvrage et l’AMO, le conseil, la conduite du
+                            changement, la conduite de projet, l’innovation et la veille technologique.
+                        </span>
+                        <!-- card content link -->
+                        <span> 
+                            <a class="usi-link" href="#">lire la suite
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a> 
+                        </span>
                     </p>
-                    <span> 
-                        <a class="usi-link" href="#">lire la suite
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a> 
-                    </span>
-
                 </div>
             </div>
 
         </div>
-    </div>
+    </section>
 
-    <div class="row">
+    <!-- section 3 ( realisation) -->
+    <section class="row">
         <div class="container">
+            <!-- title -->
             <div class="title-container">
                 <h3 class="title"> Réalisation</h3>
             </div>
 
             <div class="rea-row">
+                <!-- realisation card -->
                 <div class="rea-card">
                     <div class="rea-card-top">
+                        <!-- realisation loggo -->
                         <div class="rea-card-logo"></div>
+                        <!-- realisation ttitle and link -->
                         <h3 class="rea-card-title">
                             <a class="" href="#">SIGEEE</a>   
                         </h3>
                     </div>
+                    <!-- realisation description -->
                     <div class="py-2">
                         <p class="rea-card-content">
-                            Système d’Information de Gestion des Elèves, Enseignants et Ecoles (SIGEEE).
+                            Système d’Information de Gestion des Elèves, Enseignants et Ecoles (SIGEEE). 
+                            C'est le dispositif de référence pour avoir toutes les données pertinentes
+                            sur le système éducatif haïtien avec un tableau de bord mis à jour en temps réel.
                         </p>
                     </div>
                 </div>
 
-                <div class="rea-card rea-center">
+                 <!-- realisation card -->
+                <div class="rea-card">
                     <div class="rea-card-top">
                         <div class="rea-card-logo"></div>
                         <h3 class="rea-card-title">
@@ -91,7 +106,8 @@
                         </p>
                     </div>
                 </div>
-
+ 
+                 <!-- realisation card -->
                 <div class="rea-card">
                     <div class="rea-card-top">
                         <div class="rea-card-logo"></div>
@@ -102,23 +118,30 @@
                     </div>
                     <div class="py-2">
                         <p class="rea-card-content">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quis eligendi odit molestias dolorum sit error omnis velit. Ut aperiam natus reprehenderit sapiente eaque, quidem ducimus doloremque provident corporis distinctio.
+                            « Pour une Education de Qualité en Haïti, (PEQH) » entend prendre une orientation 
+                            différente en embrassant la question de la qualité de l’éducation.
+                            Sur ce site vous avez accès à toutes les information indispensables du projet ainsi
+                            que les outils développés pour le projet.
                         </p>
                     </div>
                 </div>
 
             </div>
         </div>
-    </div>
-    <!-- section directeur -->
-    <div class="row bg-usi-blue-500">
+    </section>
+
+    <!-- section 4 (directeur) -->
+    <section class="row bg-usi-blue-500"> 
         <div class="container">
             <div class="dir-row">
+                <!-- user card  -->
                 <div class="dir-card">
+                    <!-- user picture -->
                     <div class="dir-picture">
                         <img src="./assets/userPicture/dr Aluc.jpg" width="1200" height="1200" alt="le directeur" >
                     </div>
 
+                    <!-- user information -->
                     <div class="dir-content-container">
                         <h3 class="dir-user-name"> Jean barthole Aluc</h3>
                         <h3 class="dir-user-poste">Coordonnateur</h3>
@@ -131,11 +154,14 @@
                     </div>
                 </div>
 
+                <!-- user card  -->
                 <div class="dir-card">
+                    <!-- user picture -->
                     <div class="dir-picture">
                         <img src=".\assets\userPicture\Mr Pierre Jean.jpg" width="1200" height="1200" alt="ledirecteur adjoint" >
                     </div>
 
+                     <!-- user information -->
                     <div class="dir-content-container">
                         <h3 class="dir-user-name"> Pierre Jean</h3>
                         <h3 class="dir-user-poste">Coordonnateur Adjoint</h3>
@@ -149,18 +175,50 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="row">
+    <!-- section 5 grand catier -->
+    <section class="row">
         <div class="container">
+            <!-- section title -->
             <div class="title-container">
                 <h1 class="title"> Grand chantier</h1>
             </div>
 
-            <div class="py-8">
-                <app-accordion title="'Titre'">
-                    <app-accordion-link [title]="'Développement du SIGE'">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, magnam! Eaque numquam maxime aperiam eum eos molestiae quae assumenda molestias quidem magnam ab dolorem tempora laborum asperiores, ducimus velit nam?
+            <!-- section accordion -->
+            <div class="py-8 md:w-4/5 lg:w-3/4 mx-auto">
+                <app-accordion class=" " title="'Titre'">
+                    <app-accordion-link class="" [title]="'Développement du SIGE'">
+                        <div>
+
+                        </div>
+                        <p class=""> 
+                            L’information constitue le fondement de la gestion,
+                            de la planification et de l’évaluation d’un système éducatif.
+                            lors de l’établissement d’un processus de gestion de l’éducation, 
+                            le système d’information sur la gestion de l’éducation (SIGE) doit informer les différents
+                            acteurs et partenaires sur l’état du secteur, son efficacité interne et externe,
+                            son fonctionnement pédagogique et institutionnel, sa performance, ses lacunes et ses besoins.
+                            <br/><br/>
+                            Un système d’information sur la gestion de l’éducation (SIGE) gère les informations
+                            éducatives aux fins de la planification de l’éducation. Il doit non seulement rassembler,
+                            entreposer des données et traiter l’information, il doit aussi aider à formuler, 
+                            gérer et évaluer les politiques éducatives. <br/> Il se veut être une thérapie,
+                            et comme telle, il doit être fondé sur un diagnostic précis et exact. 
+                            D’où la nécessité d’une analyse détaillée et critique afin d’identifier les problèmes et
+                            de proposer des solutions.
+                            <br/><br/>
+                            Ce système peut s’appeler différemment d’un pays à l’autre
+                            (par exemple : système de gestion scolaire, système d’information sur les élèves). 
+                            <br/> Dans le cas du Ministère de l’Education Nationale et de la Formation Professionnelle, 
+                            il s’appelle SIGE-MENFP. Il doit contenir, non seulement, des données administratives mais aussi
+                            des données sur les finances, les ressources humaines, et l’apprentissage.
+                
+                            <span class="">Visitez le 
+                                <a class="usi-link" target="_blank" href="menfp.gouv.ht/portal/">https://menfp.gouv.ht/</a>
+                                Pour plus d'info.  
+                            </span>
+                        </p>
                     </app-accordion-link>
 
                     <app-accordion-link [title]="'Infrastructure Technologique MENFP'">
@@ -170,6 +228,6 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
 </div>

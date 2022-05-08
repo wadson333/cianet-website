@@ -1,11 +1,12 @@
-<div class="relative usi-col-13 shadow-lg 
-    min-w-[349px] max-w-[349px]  min-h-[385px] max-h-[385px] my-9">
-    <div class="w-bg-linear text-center w-full h-96  max-h-96 ">
+<!-- user card -->
+<div class="user-card">
+    <!-- user picture -->
+    <div class="user-picture">
         <img [src]="'./assets/userPicture/'+userPicture"  class="object-cover h-full w-full" alt="" srcset="">
     </div>
-
-    <div class="user-info py-4 px-2 text-center shadow-lg bg-usi-light-gray ">
+    <!--  user info -->
+    <div class="user-info">
         <h3 class="text-xl capitalize font-bold text-usi-black-text tracking-wider"> {{userName}}</h3>
-        <h3 class="font-thin capitalize text-usi-black"> {{userRole}}</h3>
+        <h3 class="font-thin capitalize text-usi-dark-gray"> {{userRole}}</h3>
     </div>
 </div> 

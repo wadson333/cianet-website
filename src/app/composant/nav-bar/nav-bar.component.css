@@ -1,28 +1,47 @@
+nav{
+    @apply bg-white shadow-sm shadow-gray-200 z-10;
+}
+
+.nav-content-container{
+    @apply md:flex md:flex-row  mx-auto py-4 relative
+}
+
+.nav-logo-container{
+    @apply flex justify-between md:block
+}
+
+/**************************************** navbar style**************************************************/
+
+/* navbar div container */
+.nav-bar-container{
+    @apply relative z-10  -mx-4
+           md:mx-0 md:flex md:justify-end md:flex-grow md:self-center md:static;
+}
+
+/* navbar ul */
+.navbar-nav{
+    @apply flex flex-col  bg-usi-light-gray absolute top-4 left-0 w-full border-t  border-usi-blue
+    md:flex-row md:justify-end md:gap-8 md:flex-grow md:self-center md:static md:bg-white md:border-none
+ }
+
+/* nav li */
 .nav-link{ 
-    @apply text-usi-black-text mx-4 font-Roboto font-semibold first-letter:capitalize text-base
-    text-justify
-    transition-all duration-150 hover:text-usi-blue-400;
+    @apply text-usi-black-text font-semibold first-letter:capitalize text-base text-justify
+    transition  hover:text-usi-blue-400;
 }
 
-.active{
-    @apply text-usi-blue-400
-}
-
+/* nav -a */
 .nav-item{
     @apply p-4 border-b border-usi-light-gray-100 
     md:border-none md:p-0
 }
 
-.nav-bar-container{
-    @apply relative z-10  mx-usi-4px 
-            md:mx-0 md:flex md:justify-end md:flex-grow md:self-center md:static 
+/* activ link */
+.active{
+    @apply text-usi-blue-200
 }
 
-.navbar-nav{
-   @apply flex flex-col  bg-usi-light-gray absolute top-6 left-0 w-full border-t border-usi-blue
-   md:flex-row md:justify-end md:flex-grow md:self-center md:static md:bg-white md:border-none
-}
-
+/* animation for the nav state */
 .show{
     @apply  flex  transition-transform ease-in md:translate-y-0 md:flex;
 }

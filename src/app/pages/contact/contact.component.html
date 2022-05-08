@@ -1,6 +1,6 @@
 <div>
     <app-header-picture [backgroundImage]="backgroundImage" [pageTitle]="pageTitle"></app-header-picture>
-    <app-breadcrump [pageLabel]="pageLabel"></app-breadcrump>
+    <app-breadcrump ></app-breadcrump>
     
     <div class="container">
         <div id="container-bottom" class="flex flex-col flex-wrap py-8">
@@ -11,17 +11,17 @@
                         <ul class="cd-list">
                             <li>
                                 <span class="cd-icon"><i class="fa-solid fa-phone"></i></span>
-                                <span class="cd-text">3730-5068 / 4302-4202 
+                                <span class="cd-text">(+509) 2811-9035
                                 </span>
                             </li>
                                 
                             <li>
                                 <span class="cd-icon"><i class="fa-solid fa-location-dot"></i></span>
-                                <span class="cd-text">3 rue valeix,peguy ville</span>
+                                <span class="cd-text"> 3, Rue Villevaleix, Peguy-ville</span>
                             </li>
                             <li>
-                                <span class="cd-icon"><i class="fa-solid fa-location-dot"></i></span>
-                                <span class="cd-text">3 rue valeix,peguy ville</span>
+                                <span class="cd-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <span class="cd-text"> usi@menfp.gouv.ht</span>
                             </li>
                         </ul>
                     </div> 
@@ -29,7 +29,7 @@
                     <!---------------------------------- coordonnee ------------------------------------------>
                     
                     <div id="map" class="md:basis-2/3 p-0.5 h-96 border border-usi-border-gray shadow-md">
-                        <app-map [height]="'h-full'" [width]="'w-full'"></app-map>
+                        <app-map></app-map>
                     </div>
                     <!---------------------------------- map ------------------------------------------>
                 </div>

@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
   styleUrls: ['./nav-bar.component.css'],
+
+  // animation for the nav state 
   animations:[
     trigger('navToggle',[
 
@@ -30,7 +32,6 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class NavBarComponent implements OnInit {
-
   constructor() { }
   state='toggleOff'
   toggleMenuB=false;
@@ -39,16 +40,17 @@ export class NavBarComponent implements OnInit {
     default:"fas fa-bars"
   }
 
-
   ngOnInit(): void {
   }
   
+
+  // toggle nav state and animate the state 
   toggleMenu(){
     this.toggleMenuB=!this.toggleMenuB; 
     this.state==="toggleOff"? this.state="toggleOn" : this.state="toggleOff";
-    console.log(this.state)
   }
 
+  //on small and medium screen close the nav after each link clicked
   closeNav(){
     if(this.toggleMenuB) this.toggleMenuB=false;
   }

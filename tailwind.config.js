@@ -16,9 +16,10 @@ module.exports = {
       }
     },
     extend: {
-      spacing: {
-        'usi-4px': '-16px',
+      height: {
+        '3/5vh': '60vh',
       },
+
       colors:{
         "usi-orange-400":"#fb923c",
         "usi-blue-900":"#030e19",
@@ -34,13 +35,10 @@ module.exports = {
         "usi-light-gray":"#f7f7f7",
         "usi-light-gray-100":"#ddd",
         "usi-gray":"#c7c7c7",
-        "usi-dark-gray":"#565656",
+        "usi-dark-gray":"#464646",
         "usi-black":"#111",
         "usi-black-text":"#222",
         "usi-border-gray":"#aaa"
-      },
-      borderWidth:{
-        "2x9":"18px"
       },
 
       backgroundImage:{

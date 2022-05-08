@@ -1,4 +1,4 @@
-import { Component, OnInit,AfterViewInit,OnChanges,OnDestroy, Input, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild } from '@angular/core';
 import  * as L  from 'leaflet'
 
 @Component({
@@ -7,10 +7,10 @@ import  * as L  from 'leaflet'
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  @Input() height="h-0";
-  @Input() width="w-0";
   @ViewChild("map",{static:false}) mapref!:ElementRef;
-
+  layerGroup= new L.LayerGroup();
+  
+  // marker object
   marker=L.marker([18.5130303,-72.2710205],{
     icon:new L.Icon({
       iconUrl: L.Icon.Default.prototype.options.iconUrl,
@@ -21,17 +21,10 @@ export class MapComponent implements OnInit {
     opacity:1,
   });
   
-  layerGroup= new L.LayerGroup();
-
   constructor() { }
-
-  ngOnInit(): void {
-      
-  }
+  ngOnInit(): void { }
 
   ngAfterViewInit(){
-    this.mapref.nativeElement.classList.add(this.height)
-    this.mapref.nativeElement.classList.add(this.width)
     this.addMap()
   }
 
@@ -61,5 +54,4 @@ export class MapComponent implements OnInit {
     this.marker.bindPopup(popUp).openPopup();
   }
   
-
 }

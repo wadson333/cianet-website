@@ -1,0 +1,11 @@
+.row{
+    @apply py-4 bg-usi-blue-900 
+}
+
+.footer-msg{
+    @apply text-gray-100 text-xs text-center
+}
+
+.link{
+    @apply font-bold underline hover:text-usi-orange-400 transition
+}

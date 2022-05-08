@@ -1,9 +1,13 @@
+<!-- accordion link (structure of each element in the accordion) -->
 <li> 
+
     <div class="accordion-top" (click)="toggleUpOrDown()">
+        <!-- title of the element  -->
         <h3 class="accordion-top-title">
            {{title}}
         </h3>
         
+        <!-- the icon use to toggle the acoordion content -->
         <h3 class="accordion-top-icon" >
             <span class="inline-block" [ngClass]="toggleOpen ? 'icon-show':'icon-hide'">
                 <i class="fa-solid fa-circle-chevron-up" ></i> 
@@ -11,6 +15,7 @@
         </h3>
     </div>
 
+    <!-- content of the accordion  -->
     <p class="accordion-bottom" *ngIf="toggleOpen" [@accordionToggle]>
         <ng-content></ng-content>
     </p>

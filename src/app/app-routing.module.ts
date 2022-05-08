@@ -9,22 +9,22 @@ import { TeamComponent } from './pages/team/team.component';
 const routes: Routes = [
   {
     path:"accueil",
-    data:{ breadcrumb:"Acceuil" },
+    data:{ breadcrumb:{alias:"Acceuil"} },
     component:HomeComponent
   },
   {
     path:"a-propos",
-    data:{ breadcrumb:"A-propos" },
+    data:{ breadcrumb:{alias:"A-propos"} },
     component:AboutComponent
   },
   {
     path:"equipe",
-    data:{ breadcrumb:"Equipe" },
+    data:{ breadcrumb:{alias:"Equipe"} },
     component:TeamComponent
   },
   {
     path:"contact",
-    data:{ breadcrumb:"Contact" },
+    data:{ breadcrumb:{alias:"Contact"} },
     component:ContactComponent
   },
   {

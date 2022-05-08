@@ -1,0 +1,7 @@
+ #breadcrumb{
+     @apply text-usi-black-text py-3 border-b border-usi-border-gray mb-8
+ }
+
+ .base-link{
+     @apply text-usi-blue-200 hover:underline transition
+ }

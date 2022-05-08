@@ -1,0 +1,11 @@
+.btn{
+    @apply my-4
+}
+
+.btn a{
+    @apply text-usi-blue-200 px-4 py-3 bg-white rounded-md shadow-md transition
+}
+
+.btn:hover a{
+    @apply bg-transparent shadow-none hover:underline
+}
