@@ -3,11 +3,11 @@
  }
  
  .title{
-     @apply text-3xl font-semibold text-usi-black-text
+     @apply text-3xl font-semibold text-template-black-212121
  }
 
  .sub-title{
-       @apply text-usi-black font-semibold 
+       @apply text-template-gray-333 font-semibold 
  }
 
  .row{
@@ -23,28 +23,33 @@
 
  .header-back-linear{
     background-image: linear-gradient(105deg,
-     rgba(15, 72, 128, 1) 0%, rgba(18, 86, 153, 0.8) 50%, transparent 70%);
- }
-
- .rea-center{
-   @apply sm:mx-[1%] md:mx-[2%]
+    rgba(0, 87, 163,1) 0%, rgba(0, 87, 163, 0.8) 60%, transparent 70%);
  }
 
  .usi-link{
-   @apply text-usi-blue-200 font-light text-base tracking-wide border-b border-usi-blue-200
-   hover:text-usi-blue-400 hover:px-4 hover:border-usi-blue-400 transition;
-   
+   @apply text-template-blue-0057A3 font-light text-base tracking-wide  underline
+   hover:text-template-blue-009FDF  hover:border-template-blue-009FDF transition; 
  }
+
+ .btn{
+   @apply inline-block my-4 px-4 py-3 rounded-md shadow-sm transition
+ }
+
 
 /***************************************** section 1 ****************************************/
 
-.att-card-container{
-   @apply flex flex-col  my-4
-   sm:flex-row sm:justify-between
-}
+ .att-card-container{
+      @apply flex flex-col md:flex-row justify-between 
+ }
+
  .att-card{
-    @apply my-2 p-6 border border-[rgba(0,0,0,0.2)] rounded-md shadow-sm text-base
-    sm:basis-usi-1/2 sm:my-0
+   /* border border-[rgba(0,0,0,.2)] rounded-md */
+    @apply flex flex-col py-6 px-6  my-4 text-base 
+      md:border-none md:px-0 md:basis-2/5
+ }
+
+ .att-separator{
+    @apply hidden md:block w-[1px] h-1/5 bg-template-orange-da291c
  }
 
  .att-card-title{
@@ -52,18 +57,24 @@
  }
 
  .att-card-content{
-   @apply  text-usi-dark-gray font-light inline-block
+   @apply  text-template-gray-333 font-light inline-block text-justify flex-1
+ }
+
+ .att-btn{
+   @apply border border-template-blue-0057A3 shadow-sm mb-0 text-template-gray-333 text-sm
+         hover:border-template-orange-fb923c hover:text-template-blue-009FDF
  }
  
  /******************************************* setion 2 *******************************************/
  .rea-row{
-    @apply grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-6 lg:gap-4 justify-center py-8 
-    /* @apply  flex flex-row flex-wrap sm:justify-start sm:gap-5  */
+    @apply grid grid-cols-1 justify-center py-14
+    md:grid-cols-2 lg:grid-cols-4 md:gap-6 lg:gap-4
+   
  }
  
  .rea-card{
-      @apply max-w-[345px] my-3 pb-5 lg:my-0 
-   /* @apply relative basis-1/3 min-w-[345px]  sm:min-w-[290px] */
+      @apply relative py-5 mx-auto sm:mx-0 px-6 sm:px-0
+   /* @apply  basis-1/3 min-w-[345px]  sm:min-w-[290px] */
  }
 
  .rea-card-top{
@@ -71,57 +82,65 @@
  }
 
  .rea-card-logo{
-    @apply relative h-20 w-20 rounded-full mx-auto bg-usi-orange-400 shadow-md
+    @apply relative inline-block text-center leading-[1] h-16 w-16 rounded-full mx-auto
+     bg-template-orange-da291c shadow-md text-3xl  text-template-white-FFF
  }
  
  .rea-card-title{
-    @apply py-2; 
+    @apply mt-2; 
  }
 
  .rea-card-title a{
-   @apply inline-block px-1 uppercase text-xl tracking-wide leading-relaxed font-extralight 
-       text-usi-blue-200 hover:text-usi-blue-300 hover:underline transition;
+   @apply inline-block text-xl tracking-wider mt-1 font-semibold
+       text-template-blue-0057A3   hover:text-template-blue-009FDF hover:underline transition;
  }
 
  .rea-card-content{
-    @apply px-2 text-center flex-grow text-base mb-5;
+    @apply -mt-0.5 text-center font-light text-template-gray-333;
+ }
+ /************************************* Mission   ***************************************/
+ .mission-title{
+    @apply text-template-white-FFF mb-3
+ }
+
+ .mission-list{
+    @apply px-5
+ }
+ .mission-list li{
+    @apply first-letter:capitalize even:mt-2 list-disc font-light
  }
 
  /************************************* section 3 ***************************************/
  .dir-row{
-   @apply flex flex-col
-    md:justify-start md:flex-row md:flex-wrap
-}
+   @apply grid grid-cols-1 md:grid-cols-2 gap-6
+ }
 
-.dir-card{
-  @apply basis-usi-1/2 flex flex-col my-3
-  sm:flex-row sm:justify-center md:flex-wrap lg:flex-nowrap
-}
+ .dir-card{
+    @apply  px-5 py-3 overflow-hidden bg-template-light-gray-f7f7f7 shadow-sm 
+    border border-x-template-white-FFF rounded-md text-center
+ }
 
-.dir-picture{
-   @apply relative text-center bg-usi-light-gray p-0.5 max-w-[240px] max-h-[270px] self-center
-   md:self-auto
+ .dir-picture{
+   @apply text-center
+ }
 
-}
+ .dir-picture img{
+    @apply object-cover w-[360px] h-[360px] mx-auto my-auto
+ }
+ 
+ .dir-user-name{
+    @apply text-template-black-212121 text-2xl font-semibold tracking-wider mt-1.5 mb-1
+ }
 
-.dir-picture img{
-   @apply max-w-[220px] max-h-[270px]
-}
+ .dir-user-poste{
+    @apply text-template-blue-0c3a66 font-semibold mb-5
+ }
 
-.dir-content-container{
-   @apply py-2 ml-4 text-center min-w-[245px] max-w-[420px] self-center
-   sm:text-left sm:self-auto  md:min-w-[200px] md:max-w-[350px]  md:text-center lg:text-left
-}
+.dir-bio-container{
+   @apply px-4 
+ }
 
-.dir-user-name{
-   @apply text-xl tracking-wide text-white font-bold capitalize mb-1
-}
-
-.dir-user-poste{
-   @apply text-base font-extralight text-[#eee] capitalize mb-1 -mt-1
-}
-
-.dir-user-bio{
-   @apply text-sm py-2 text-[#eee]
-}
+ .dir-bio{
+    @apply text-template-gray-333 font-light 
+ }
 

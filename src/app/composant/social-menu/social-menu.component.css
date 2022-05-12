@@ -4,5 +4,5 @@ ul{
 
 /* link element style */
 .social-link{
-    @apply text-white hover:text-usi-orange-400 transition
+    @apply text-template-white-FFF hover:text-template-orange-fb923c transition
 }

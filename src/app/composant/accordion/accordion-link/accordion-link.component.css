@@ -1,9 +1,18 @@
 .accordion-top{
-    @apply  flex flex-row bg-white border border-white rounded-md shadow-sm cursor-pointer mb-2
+    @apply  flex flex-row border border-template-white-FFF
+     rounded-md shadow-sm cursor-pointer mb-2
 }
 
-.accordion-top-title{
-    @apply py-3 px-4 flex-1 text-base font-semibold ;  
+.top-hide{
+    @apply bg-template-white-FFF text-template-black-212121
+}
+
+.top-show{
+    @apply bg-template-blue-0057A3 text-template-white-FFF
+}
+
+.accordion-top-title{ 
+    @apply py-3 px-4 flex-1 text-base font-medium ;  
 }
 
 .accordion-top-icon{
@@ -12,12 +21,11 @@
 
 .icon-show{
     animation: showIcon .3s ease forwards;
-    @apply text-usi-orange-400;  
 }
 
 .icon-hide{
     animation: hideIcon .3s ease forwards;
-    @apply text-usi-black-text;
+    @apply text-template-gray-333;
 }
 
 /* transition for the accordion  icon */
@@ -43,5 +51,5 @@
 
 /* accordion content  */
 .accordion-bottom{
-    @apply px-6 pb-5 pt-3 -mt-2 text-base
+    @apply px-6 pb-5 pt-3 -mt-2 text-base font-light
 }

@@ -1,14 +1,14 @@
 .user-card{
-    @apply relative shadow-lg 
-     min-w-[349px] max-w-[349px]  min-h-[385px] max-h-[385px] my-9;
-     border-color: rgba(0,0,0 /25%);
+    @apply relative shadow-md bg-template-white-FFF
+     min-w-[349px]   min-h-[385px]  my-9;
+     box-shadow: 0 0 1px rgb(0 0 0 / 1%);
 }
-
+ 
 .user-picture{
     @apply  text-center w-full h-96  max-h-96;
     background-image : radial-gradient(circle,rgba(190, 190, 190,.7),#c7c7c7)
 }
 
 .user-info{
-    @apply absolute left-4 right-4 top-[90%]  py-4 px-2 text-center shadow-lg bg-usi-light-gray ;
+    @apply absolute left-4 right-4 top-[90%]  py-4 px-2 text-center shadow-lg bg-template-white-FFF ;
 }

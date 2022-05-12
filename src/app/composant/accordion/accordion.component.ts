@@ -17,6 +17,7 @@ export class AccordionComponent implements OnInit,AfterContentInit{
 
   ngAfterContentInit(): void {
   //  trasform te element in a table and subscribe to the toggle event of each accordion-link item
+  this.accordionLinks.toArray()[0].toggleOpen=true;
    this.accordionLinks.toArray().forEach((li: AccordionLinkComponent) => {
      li.toggle.subscribe((open) => {
        this.openLink(li,open);

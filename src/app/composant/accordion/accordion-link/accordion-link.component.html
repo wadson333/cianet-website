@@ -1,7 +1,7 @@
 <!-- accordion link (structure of each element in the accordion) -->
 <li> 
 
-    <div class="accordion-top" (click)="toggleUpOrDown()">
+    <div class="accordion-top" [ngClass]="toggleOpen ? 'top-show':'top-hide'" (click)="toggleUpOrDown()">
         <!-- title of the element  -->
         <h3 class="accordion-top-title">
            {{title}}

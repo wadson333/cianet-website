@@ -1,5 +1,5 @@
 nav{
-    @apply bg-white shadow-sm shadow-gray-200 z-10;
+    @apply bg-template-white-FFF shadow-sm shadow-template-light-gray-f5f5f5 z-10;
 }
 
 .nav-content-container{
@@ -20,25 +20,26 @@ nav{
 
 /* navbar ul */
 .navbar-nav{
-    @apply flex flex-col  bg-usi-light-gray absolute top-4 left-0 w-full border-t  border-usi-blue
-    md:flex-row md:justify-end md:gap-8 md:flex-grow md:self-center md:static md:bg-white md:border-none
+    @apply flex flex-col  bg-template-white-FFF border-b border-b-template-light-gray-f5f5f5 absolute top-4 left-0 w-full border-t  
+    border-t-template-light-gray-f5f5f5
+    md:flex-row md:justify-end md:gap-8 md:flex-grow md:self-center md:static md:bg-template-white-FFF md:border-none
  }
 
 /* nav li */
 .nav-link{ 
-    @apply text-usi-black-text font-semibold first-letter:capitalize text-base text-justify
-    transition  hover:text-usi-blue-400;
+    @apply text-template-black-212121 font-semibold tracking-wide first-letter:capitalize text-base text-justify
+    transition  hover:text-template-blue-009FDF;
 }
 
 /* nav -a */
 .nav-item{
-    @apply p-4 border-b border-usi-light-gray-100 
-    md:border-none md:p-0
+    @apply p-4 border-b border-template-light-gray-ddd
+    md:border-none md:p-0 
 }
 
 /* activ link */
 .active{
-    @apply text-usi-blue-200
+    @apply text-template-blue-0061a4
 }
 
 /* animation for the nav state */

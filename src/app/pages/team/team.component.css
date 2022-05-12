@@ -1,7 +1,7 @@
- .container .row{
-    @apply  py-8 my-4
- }
-
+.row{
+    @apply  py-4 border-b 
+ } 
+ 
 .row-grid{
    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 
 }
@@ -10,10 +10,26 @@
     border-color: rgba(0,0,0 /25%);
 }
  
-.user-center{
-   @apply sm:mx-[2%]
+.title{
+   @apply text-3xl font-semibold text-template-black-212121
 }
 
-.title{
-   @apply text-3xl font-semibold text-usi-black-text
+.anonce{
+   @apply text-template-gray-333
+}
+
+.top-anonce{
+   @apply text-template-white-FFF
+}
+
+.anonce ul{
+   @apply px-5
+}
+
+.anonce ul li{
+   @apply list-disc
+}
+
+.content > section{
+   @apply even:bg-template-light-gray-f7f7f7
 }

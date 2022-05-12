@@ -1,7 +1,16 @@
  #breadcrumb{
-     @apply text-usi-black-text py-3 border-b border-usi-border-gray mb-8
+     @apply text-template-gray-333 py-3 border-b border-template-light-gray-ddd mb-8
  }
 
  .base-link{
-     @apply text-usi-blue-200 hover:underline transition
+     @apply text-template-blue-0057A3 hover:underline hover:text-template-blue-009FDF transition
  }
+
+
+
+
+
+
+
+
+ 
