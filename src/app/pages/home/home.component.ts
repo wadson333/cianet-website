@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   backgroundImage='bg-acceuil'
-  constructor() { }
+  date:any
+  constructor(private scroll:ViewportScroller) { }
 
   ngOnInit(): void { 
   }
    
+  scrollToAncor(){
+    this.scroll.scrollToAnchor('directeur')
+  }
 }

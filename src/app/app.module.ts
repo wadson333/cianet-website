@@ -1,6 +1,8 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { registerLocaleData } from '@angular/common';
+import localefr from '@angular/common/locales/fr';
 
 import { BreadcrumbModule } from "xng-breadcrumb";
 import { BreadcrumbService } from 'xng-breadcrumb';
@@ -52,8 +54,16 @@ import { AccordionLinkComponent } from './composant/accordion/accordion-link/acc
     BreadcrumbModule,
   ],
   providers: [
-    BreadcrumbService
+    BreadcrumbService,
+    {
+      provide: LOCALE_ID,
+      useValue: 'fr'
+  },
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(){
+    registerLocaleData(localefr)
+  }
+}

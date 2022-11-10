@@ -1,69 +1,81 @@
 <div>
-    <app-header-picture [backgroundImage]="backgroundImage" [pageTitle]="pageTitle"></app-header-picture>
-    <app-breadcrump ></app-breadcrump>
-    <div class="container">
-        
-        <!-- <section class="row">
-            <p class="anonce">
-                L’organisation interne de l’Unité de Système d’Information (USI) est basée sur la compétence, l’expérience et l’assurance qualité. Elle regroupe les fonctions d’organisation, de méthode et de fourniture de services.
-            </p>
-        </section>  -->
+  <app-header-picture
+    [backgroundImage]="backgroundImage"
+    [pageTitle]="pageTitle"
+  ></app-header-picture>
+  <app-breadcrump></app-breadcrump>
+  <div class="container">
+    <section class="row">
+      <h1 class="title">La coordination</h1>
+      <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
+        <div class="anonce">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+          placeat recusandae nostrum. Autem at fugiat obcaecati earum iusto!
+          Exercitationem quae nulla molestiae? Tempore expedita minus laborum
+          nisi doloremque quam odio! -->
+        </div>
+        <div class="row-grid">
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Coordonateur'"
+            [userPicture]="'avatar.png'"
+          >
+          </app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Coordonateur Adjoint'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+        </div>
+      </div>
+    </section>
 
-        <!-- coordination  -->
-        <section class="row">
-            <h1 class="title">La coordination</h1>
-            <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
-                <div class="anonce">
-                    Au niveau stratégique, le staff de la direction assure la coordination des équipes et la gestion au quotidien des dossiers au sein de l’Unité.
-                    Elle est secondée dans sa tâche par les spécialistes en qualité et méthode pour la gestion du portefeuille.
-                    <!-- Elle est composée :
-                    <ul>
-                        <li>du directeur : <span class="font-semibold">Jean Barthol Aluc</span></li>
-                        <li>du directeur adjoint : <span class="font-semibold">Pierre Jean</span></li>
-                        <li>des spécialistes (généralement des consultants en qualité et méthode ).</li>
-                    </ul> -->
-                </div>
-                <div class="row-grid">
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Jean Barthol Aluc'" [userRole]="'Coordonateur'" [userPicture]="'dr Aluc.jpg'"> </app-user-card>
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Pierre JEAN'" [userRole]="'Coordonateur Adjoint'" [userPicture]="'Mr Pierre Jean.jpg'"></app-user-card>
-                </div>
-            </div>
-        </section>
+    <!-- Secretariat -->
+    <section class="row">
+      <h1 class="title">Le Secrétariat</h1>
+      <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
+        <div class="anonce">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita
+          illum reiciendis quidem accusantium, aspernatur at officia hic
+          obcaecati corrupti quae, voluptatum neque incidunt eligendi vel
+          veritatis magnam culpa sunt laboriosam. secrétariat est ainsi composé
+          -->
+        </div>
+        <div class="row-grid">
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Technicienne Sénior I Niveau I'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Technicienne Sénior II'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Responsable de Section'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+        </div>
+      </div>
+    </section>
 
-        <!-- Secretariat -->
-        <section class="row">
-            <h1 class="title">Le Secrétariat</h1>
-            <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
-                <div class="anonce">
-                    l’équipe du secrétariat qui constitue la porte d’entrée de l’unité. Elle est, entre autres, responsable de l’accueil des visiteurs et de les acheminer aux services appropriés, du traitement de toutes les correspondances du bureau, de la gestion et l’archivage
-                    des dossiers de nature administrative.
-                    
-                    <!-- Elle est également chargée de la réception et la répartition des appels téléphoniques entre les services ainsi que la planification du calendrier des rendez-vous pour le compte de l’unité. Le
-                    secrétariat est ainsi composé :
-                    <ul>
-                        <li>Manoucheca Extra</li>
-                        <li>Stéphanie Myril</li>
-                        <li>Alda François Moïse</li>
-                    </ul> -->
-                </div>
-                <div class="row-grid">
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Manoucheka EXTRA'" [userRole]="'Technicienne Sénior I Niveau I'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Stéphanie MYRIL'" [userRole]="'Technicienne Sénior II'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4" [userName]="'Alda Francois MOISE '" [userRole]="'Responsable de Section'" [userPicture]="'Manoucheka Extra.jpg'"></app-user-card>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- Developpement -->
-        <section class="row">
-            <h1 class="title">L'Equipe Projet</h1>
-            <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
-                <p class="anonce">
-                    Elle travaille à la réalisation de tous les projets spécifiques à la bonne marche
-                     de l’Unité et ceux d’autres structures internes ou externes nécessaires au
-                      développement du système d’information du MENFP.
-                    <!-- <br>
+    <!-- Developpement -->
+    <section class="row">
+      <h1 class="title">L'Equipe Projet</h1>
+      <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
+        <p class="anonce">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+          voluptatem doloribus voluptas quod suscipit harum laudantium assumenda
+          rerum? Vel quia rem quam rerum alias magni tempore totam explicabo
+          minus repellat.
+          <!-- <br>
                     <br> L’équipe Projet regroupe les développeurs (DevOps, full-stack, back-end et front-end). Elle a la maîtrise des compétences techniques intrinsèquement liées au développement des applications. (Développement et exploitation de logiciels
                     ainsi que l’administration de systèmes et d’outils spécifiques). Ils ont des compétences avérées en programmation (écriture et compréhension du code, connaissance des langages de programmation, développement de scripts et intégration),
                     en déploiement d’infrastructures (mise en place de passerelles pour transférer des opérations ou des données) ainsi qu’en évaluation d’applications (capacité à évaluer le fonctionnement des applications, à procéder à des ajustements en
@@ -81,55 +93,76 @@
                     <br>c) John Peter Thomas
                     <br>d) Bermane Paul.
                     <br>e) Mackenson Noel -->
-                </p>
-                
-                <div class="row-grid">
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Bermane PAUL'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="''"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'John Peter THOMAS'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'John Peter THOMAS.jpg'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4" [userName]="'Vladimir OBDEUS'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'Vladimir OBDEUS.jpg'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4" [userName]="'Balthazar ROSEME'" [userRole]="'Analyste Programmeur Sénior I'" [userPicture]="'Balthazar ROSEME.JPG'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Wadson JOSEPH'" [userRole]="'Analyste Programmeur Sénior II'" [userPicture]="''"></app-user-card>
-                </div>
-            </div>
-        </section>
+        </p>
 
-        <!-- support -->
-        <section class="row">
-            <h1 class="title">Support et Opération</h1>
-            <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
-                <p class="anonce">
-                    <br> L’Equipe Opération et Supports. Cette équipe assure la réponse aux besoins 
-                    d’assistance des utilisateurs à un nœud quelconque du réseau informatique du ministère.
-                    Elle réalise toutes les tâches d’opération relevant du domaine du système d’information du ministère.
-                    <!-- <br><br> L’équipe Opérations et Support (IT support) comprend les techniciens qui assurent le support informatique aux utilisateurs. Elle a pour fonction principale de trouver des solutions aux usagers. Elle prend en charge les demandes
-                    d’assistance des employés et enregistre leur demande afin de les orienter vers une solution. Globalement, son travail consiste à diagnostiquer et identifier le problème, le formuler et le résoudre. Elle doit :
-                    <br>récupérer des informations sur les tableaux d'affichage électroniques des fabricants de matériels et de logiciels et la possibilité d'utiliser un logiciel de contrôle à distance (tel que PCAnywhere) ;
-                    <br>aider les utilisateurs finaux dans les tâches courantes en utilisant les progiciels standards NPS actuels pour les communications de données ;
-                    <br>utiliser les progiciels standards NPS actuels pour l'accès DOINET / Internet (y compris les composants Mosaic, Gopher, FTP et 3270 Emulation) .
-                    <br>Parmi les compétences essentielles de l’équipe IT support, il convient de mentionner, entre autres :
-                    <br>• Troubleshooting
-                    <br>• Application Support
-                    <br>• Messaging Support
-                    <br>• Network Support
-                    <br>• Security Support
-                    <br>• System and Hardware Support
-                    <br>• Web Support
-                    <br>• Design, and Maintenance
-                    <br><br>Cette équipe est formée de :
-                    <br>1- Stéfano Calixte
-                    <br>2- Stéphane Francisque
-                    <br>3- Shiltone Albert Béon
-                    <br><br>Il est important de souligner que périodiquement, un membre de l’équipe projet ou système est désigné pour assurer de façon rotative le rôle de support à l’équipe Opérations et Support suivant le besoin. L’équipe opération s’assure
-                    de la continuité du service au bénéfice de toutes les équipes. -->
-                </p>
-                
-                <div class="row-grid">
-                    <app-user-card class="basis-usi-1.2/4 " [userName]="'Stefano CALIXTE'" [userRole]="'Informaticien'" [userPicture]="'Stefano Calixte.jpg'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4" [userName]="'Stéphane FRANCISQUE'" [userRole]="'Informaticien'" [userPicture]="'Stephane FRANCISQUE.jpg'"></app-user-card>
-                    <app-user-card class="basis-usi-1.2/4" [userName]="'Shiltone Albert BEON'" [userRole]="'Informaticien'" [userPicture]="'Shiltone A. BEON.jpg'"></app-user-card>
-                </div>
-            </div>
-        </section>
+        <div class="row-grid">
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Analyste Programmeur Sénior I'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Analyste Programmeur Sénior I'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Analyste Programmeur Sénior I'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Analyste Programmeur Sénior I'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Analyste Programmeur Sénior II'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- support -->
+    <section class="row">
+      <h1 class="title">Support et Opération</h1>
+      <div class="flex flex-row flex-wrap justify-center md:justify-start py-4">
+        <p class="anonce">
+          <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi,
+          fugit inventore ad maiores neque itaque laudantium eveniet, nemo
+          tempora amet error quidem nihil illum modi labore quos reprehenderit
+          distinctio! -->
+        </p>
+
+        <div class="row-grid">
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Informaticien'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Informaticien'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+          <app-user-card
+            class="basis-usi-1.2/4"
+            [userName]="'Jhon Doe'"
+            [userRole]="'Informaticien'"
+            [userPicture]="'avatar.png'"
+          ></app-user-card>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>

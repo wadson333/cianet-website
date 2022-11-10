@@ -7,7 +7,6 @@ import  * as L  from 'leaflet'
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  @ViewChild("map",{static:false}) mapref!:ElementRef;
   layerGroup= new L.LayerGroup();
   
   // marker object
